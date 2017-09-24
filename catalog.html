@@ -100,7 +100,7 @@
         <h2 class="production__title production__title--video">Процесс производства</h2>
         <img class="production__video" src="http://placehold.it/260x150" alt="Процесс производства" width="260" height="150">
         <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="production__order button" href="form.html">Сделать заказ</a>
+        <a class="production__order btn" href="form.html">Сделать заказ</a>
       </section>
 
     </main>
@@ -115,9 +115,20 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link button" href="https://htmlacademy.ru/profile/id528537">HTML Academy</a>
+        <a class="copyright__link btn" href="https://htmlacademy.ru/profile/id528537">HTML Academy</a>
       </div>
     </footer>
+
+    <div class="modal-tocart">
+      <form class="modal-tocart__form" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="modal-tocart__title">Добавить в корзину</h2>
+        <p class="modal-tocart__text">Выберите размер:</p>
+        <label class="modal-tocart__label"><input class="modal-tocart__input modal-tocart__input--radio" type="radio" name="size" value="s" checked> S</label>
+        <label class="modal-tocart__label"><input class="modal-tocart__input modal-tocart__input--radio" type="radio" name="size" value="m"> M</label>
+        <label class="modal-tocart__label"><input class="modal-tocart__input modal-tocart__input--radio" type="radio" name="size" value="l"> L</label>
+        <button class="modal-tocart__add btn" type="submit">Добавить</button>
+      </form>
+    </div>
 
   </body>
 </html>
