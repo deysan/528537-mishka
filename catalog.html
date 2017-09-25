@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>Каталог | Интернет-магазин «Мишка» — Милые штучки ручной работы для дома</title>
   </head>
-  <body class="page">
+  <body>
 
     <header class="page-header">
-      <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo" src="http://placehold.it/86x35" alt="Интернет-магазин «Мишка» — Милые штучки ручной работы для дома" width="86" height="35">
+      <a class="page-header__logo" href="index.html">
+        <img src="http://placehold.it/86x35" alt="Интернет-магазин «Мишка» — Милые штучки ручной работы для дома" width="86" height="35">
       </a>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -29,7 +29,7 @@
           </li>
         </ul>
       </nav>
-      <section class="page-header__inner">
+      <section class="page-header__intro">
         <h1 class="page-header__title">Каталог товаров</h1>
       </section>
     </header>
@@ -38,17 +38,15 @@
 
       <section class="catalog">
         <article class="catalog__item">
-          <div class="catalog__photo">
-            <a class="catalog__photo-link" href="#zaychik-popryigaychik">
-              <img class="catalog__image" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" width="260" height="195">
-            </a>
-          </div>
+          <a class="catalog__image" href="#zaychik-popryigaychik">
+            <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" width="260" height="195">
+          </a>
           <div class="catalog__info">
             <div class="catalog__desc">
               <a class="catalog__title-link" href="#zaychik-popryigaychik">
                 <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
               </a>
-              <span class="catalog__feature">Рост 30 см, вес 200 г</span>
+              <p class="catalog__text">Рост 30 см, вес 200 г</p>
             </div>
             <div class="catalog__order">
               <span class="catalog__price">1 200 руб.</span>
@@ -57,17 +55,15 @@
           </div>
         </article>
         <article class="catalog__item">
-          <div class="catalog__photo">
-            <a class="catalog__photo-link" href="#korzinka-dlya-belya">
-              <img class="catalog__image" src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195">
-            </a>
-          </div>
+          <a class="catalog__image" href="#korzinka-dlya-belya">
+            <img src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195">
+          </a>
           <div class="catalog__info">
             <div class="catalog__desc">
               <a class="catalog__title-link" href="#korzinka-dlya-belya">
                 <h2 class="catalog__title">Корзинка для белья</h2>
               </a>
-              <span class="catalog__feature">Диаметр 15 см, высота 10 см</span>
+              <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
             </div>
             <div class="catalog__order">
               <span class="catalog__price">690 руб.</span>
@@ -76,31 +72,35 @@
           </div>
         </article>
         <article class="catalog__item">
-          <div class="catalog__photo">
-            <a class="catalog__photo-link" href="#bolshaya-korzinka-dlya-igrushek">
-              <img class="catalog__image" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" width="260" height="195">
-            </a>
-          </div>
+          <a class="catalog__image" href="#bolshaya-korzinka-dlya-igrushek">
+            <img src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" width="260" height="195">
+          </a>
           <div class="catalog__info">
             <div class="catalog__desc">
               <a class="catalog__title-link" href="#bolshaya-korzinka-dlya-igrushek">
                 <h2 class="catalog__title">Большая корзинка для игрушек</h2>
               </a>
-              <span class="catalog__feature">Диаметр 30 см, высота 30 см</span>
+              <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
             </div>
             <div class="catalog__order">
               <span class="catalog__price">1 500 руб.</span>
-              <a class="catalog__buy catalog__buy--cart" href="#tocart">Купить</a>
+              <a class="catalog__buy" href="#tocart">Купить</a>
             </div>
           </div>
         </article>
       </section>
 
       <section class="production">
-        <h2 class="production__title production__title--video">Процесс производства</h2>
-        <img class="production__video" src="http://placehold.it/260x150" alt="Процесс производства" width="260" height="150">
-        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="production__order btn" href="form.html">Сделать заказ</a>
+        <div class="production__header">
+          <h2 class="production__title">Процесс производства</h2>
+        </div>
+        <div class="production__player">
+          <img class="production__video" src="http://placehold.it/260x150" alt="Процесс производства" width="260" height="150">
+        </div>
+        <div class="production__desc">
+          <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="production__btn btn" href="form.html">Сделать заказ</a>
+        </div>
       </section>
 
     </main>
@@ -115,7 +115,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link btn" href="https://htmlacademy.ru/profile/id528537">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/profile/id528537">HTML Academy</a>
       </div>
     </footer>
 
@@ -123,10 +123,13 @@
       <form class="modal-tocart__form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="modal-tocart__title">Добавить в корзину</h2>
         <p class="modal-tocart__text">Выберите размер:</p>
-        <label class="modal-tocart__label"><input class="modal-tocart__input modal-tocart__input--radio" type="radio" name="size" value="s" checked> S</label>
-        <label class="modal-tocart__label"><input class="modal-tocart__input modal-tocart__input--radio" type="radio" name="size" value="m"> M</label>
-        <label class="modal-tocart__label"><input class="modal-tocart__input modal-tocart__input--radio" type="radio" name="size" value="l"> L</label>
-        <button class="modal-tocart__add btn" type="submit">Добавить</button>
+        <input class="modal-tocart__input" type="radio" name="size" value="s" id="size-s" checked>
+        <label class="modal-tocart__label" for="size-s">S</label>
+        <input class="modal-tocart__input" type="radio" name="size" value="m" id="size-m">
+        <label class="modal-tocart__label" for="size-m">M</label>
+        <input class="modal-tocart__input" type="radio" name="size" value="l" id="size-l">
+        <label class="modal-tocart__label" for="size-l">L</label>
+        <button class="modal-tocart__btn btn" type="submit">Добавить</button>
       </form>
     </div>
 
