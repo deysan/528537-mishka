@@ -7,12 +7,14 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="http://placehold.it/86x35" alt="Интернет-магазин «Мишка» — Милые штучки ручной работы для дома" width="86" height="35">
-      </a>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--logo">
+            <a class="main-nav__link" href="index.html">
+              <img src="http://placehold.it/86x35" width="86" height="35" alt="Интернет-магазин «Мишка» — Милые штучки ручной работы для дома">
+            </a>
+          </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -65,7 +67,7 @@
             </table>
           </div>
           <div class="product__image">
-            <img src="http://placehold.it/260x315" alt="Вязаные корзинки" width="260" height="315">
+            <img src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
           </div>
           <footer class="product__footer">
             <span class="product__price">Цена: 990 руб.</span>
@@ -98,8 +100,8 @@
               </cite>
             </blockquote>
             <div class="reviews__controls">
-              <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-              <button class="reviews__next" type="button">Следующий отзыв</button>
+              <button class="reviews__link reviews__link--prev" type="button">Предыдущий отзыв</button>
+              <button class="reviews__link reviews__link--next" type="button">Следующий отзыв</button>
             </div>
             <a class="reviews__btn btn" href="#comment" >Написать</a>
           </div>
@@ -110,15 +112,17 @@
         <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__info">
           <div class="contacts__item">
-            <span class="contacts__mail">e-mail:</span>
-            <a class="contacts__mailto" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            <span class="contacts__label">e-mail:</span>
+            <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </div>
           <div class="contacts__item">
-            <span class="contacts__address">адрес:</span>
-            <p class="contacts__addressto">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</p>
+            <span class="contacts__label">адрес:</span>
+            <p class="contacts__text">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</p>
           </div>
         </div>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7582790791953!2d30.320107651576738!3d59.93615306917235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f80c638c5%3A0x3d85851143d1f897!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4!5e0!3m2!1sru!2sua!4v1506270269785" width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="contacts__map">
+          <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7582790791953!2d30.320107651576738!3d59.93615306917235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f80c638c5%3A0x3d85851143d1f897!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4!5e0!3m2!1sru!2sua!4v1506270269785" width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
         <a class="contacts__btn btn" href="#feedback" >Напишите нам</a>
       </section>
 
