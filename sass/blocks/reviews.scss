@@ -1,5 +1,5 @@
 .reviews {
-
+  // это не пустая строка
   @include container;
 }
 
@@ -25,6 +25,7 @@
   font-style: normal;
   color: black;
 }
+
 .reviews__author-link {
   font-size: 17px;
   font-style: normal;

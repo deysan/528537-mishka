@@ -1,7 +1,8 @@
 .order-form {
-
+  // это не пустая строка
   @include container;
 }
+
 label + input {
   display: block;
   margin: 15px 0;
