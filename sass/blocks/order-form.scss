@@ -1,7 +1,8 @@
 .order-form {
+
   @include container;
 }
-label+input {
+label + input {
   display: block;
   margin: 15px 0;
 }
