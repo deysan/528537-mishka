@@ -1,0 +1,36 @@
+.reviews {
+  @include container;
+}
+
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.reviews__author-name {
+  display: block;
+  font-style: normal;
+  color: black;
+}
+.reviews__author-link {
+  font-size: 17px;
+  font-style: normal;
+  text-decoration: none;
+  color: #444444;
+}
+
+.reviews__btn {
+  margin: 40px 0;
+}

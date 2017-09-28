@@ -1,0 +1,11 @@
+.page-footer {
+  @include container;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.page-footer__social,
+.page-footer__copyright {
+  height: 80px;
+  border-top: 1px solid #ececec;
+}

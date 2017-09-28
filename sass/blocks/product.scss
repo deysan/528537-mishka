@@ -1,0 +1,50 @@
+.product__wrapper {
+  @include container;
+}
+
+.product__title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.product__week {
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #63d1bb;
+}
+
+.product__desc {
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.product__info {
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.product__image {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.product__footer {
+  text-align: center;
+}
+
+.product__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.product__btn {
+  margin: 30px 0;
+}

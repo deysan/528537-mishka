@@ -1,0 +1,47 @@
+.contacts {
+  @include container;
+}
+
+.contacts__title {
+  margin-top: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contacts__info {
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts__item {
+  margin-bottom: 30px;
+}
+
+.contacts__label {
+  margin-right: 30px;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: #444444;
+}
+
+.contacts__text {
+  display: inline-block;
+  margin: 0;
+}
+
+.contacts__map {
+  margin: 0 -30px;
+}
+
+.reviews__controls {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contacts__btn {
+  margin: 40px 0;
+}
