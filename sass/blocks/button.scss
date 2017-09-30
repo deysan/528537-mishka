@@ -1,16 +1,14 @@
 .btn {
   display: inline-block;
   padding: 15px;
-  border: 2px solid #444444;
+  border: 2px solid $dark;
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
   outline: none;
   text-transform: uppercase;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
+  @include font-set(17px, 20px, bold);
   width: 100%;
   box-sizing: border-box;
-  color: #444444;
+  color: $dark;
 }

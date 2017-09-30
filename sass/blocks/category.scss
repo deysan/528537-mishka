@@ -1,17 +1,19 @@
+.category {
+  margin-bottom: 25px;
+}
+
 .category__item {
   display: block;
   padding: 26px 30px;
   text-decoration: none;
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: bold;
-  color: white;
+  @include font-set(19px, 24px, bold);
+  color: $white;
 
   &--left {
-    background-color: #63d1bb;
+    background-color: $primary-color;
   }
 
   &--right {
-    background-color: #56c3b2;
+    background-color: lighten($secondary-color, 4%);
   }
 }

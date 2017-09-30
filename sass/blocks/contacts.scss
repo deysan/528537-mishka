@@ -4,15 +4,12 @@
 
 .contacts__title {
   margin-top: 40px;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
+  @include font-set(18px, 30px, bold);
 }
 
 .contacts__info {
-  font-size: 15px;
-  line-height: 30px;
-  color: #444444;
+  @include font(15px, 30px);
+  color: $dark;
 }
 
 .contacts__item {
@@ -25,7 +22,7 @@
 
 .contacts__link {
   text-decoration: none;
-  color: #444444;
+  color: $dark;
 }
 
 .contacts__text {
@@ -37,11 +34,6 @@
   margin: 0 -30px;
 }
 
-.reviews__controls {
-  margin-top: 40px;
-  text-align: center;
-}
-
 .contacts__btn {
-  margin: 40px 0;
+  margin: 30px 0;
 }

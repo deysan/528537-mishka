@@ -1,10 +1,12 @@
-
 .page-header__intro {
-  height: 215px;
+  @include center;
+  min-height: 179px;
   background-color: #fafafa;
-  border-top: 1px solid #ececec;
+  border-top: 1px solid darken($color-bg, 2%);
 
   &--index {
+    display: block;
+    min-height: 209px;
     padding-top: 70px;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -15,9 +17,7 @@
 
 .page-header__title {
   @include container;
+  @include font-set(27px, 30px, bold);
   margin: 0;
-  font-weight: bold;
-  font-size: 27px;
-  line-height: 30px;
   text-align: center;
 }

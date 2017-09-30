@@ -1,8 +1,9 @@
-@import "normalize";
 @import "variables";
 @import "mixins";
+@import "normalize";
 @import "fonts";
 @import "base";
+@import "blocks/button";
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/page-main";
@@ -17,6 +18,4 @@
 @import "blocks/catalog";
 @import "blocks/production";
 @import "blocks/order-form";
-@import "blocks/button";
 @import "blocks/modal-tocart";
-@import "blocks/visually-hidden";
