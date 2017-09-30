@@ -28,13 +28,13 @@
 }
 
 .main-nav__link {
+  @include font-set(17px, 24px, bold);
   display: block;
   padding-top: 28px;
   padding-right: 30px;
   padding-bottom: 28px;
   padding-left: 76px;
   text-decoration: none;
-  @include font-set(17px, 24px, bold);
   color: $black;
 
   &--logo {

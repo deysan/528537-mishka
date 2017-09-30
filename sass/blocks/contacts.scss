@@ -3,8 +3,8 @@
 }
 
 .contacts__title {
-  margin-top: 40px;
   @include font-set(18px, 30px, bold);
+  margin-top: 40px;
 }
 
 .contacts__info {

@@ -10,9 +10,9 @@
 }
 
 .production__title {
+  @include font-set(17px, 24px, bold);
   margin: 0;
   padding-left: 60px;
-  @include font-set(17px, 24px, bold);
 }
 
 .production__player {
@@ -32,8 +32,8 @@
 }
 
 .production__text {
-  margin: 15px 0;
   @include font(13px, 24px);
+  margin: 15px 0;
   color: $dark;
 }
 

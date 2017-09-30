@@ -3,10 +3,10 @@
 }
 
 .category__item {
+  @include font-set(19px, 24px, bold);
   display: block;
   padding: 26px 30px;
   text-decoration: none;
-  @include font-set(19px, 24px, bold);
   color: $white;
 
   &--left {

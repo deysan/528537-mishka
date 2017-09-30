@@ -12,8 +12,8 @@
 }
 
 .reviews__text {
-  margin: 20px 0;
   @include font(15px, 30px);
+  margin: 20px 0;
   color: $dark;
 }
 

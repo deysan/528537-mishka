@@ -21,9 +21,9 @@
 }
 
 .catalog__title {
+  @include font-set(17px, 24px, bold);
   margin: 0;
   margin-bottom: 5px;
-  @include font-set(17px, 24px, bold);
   color: $black;
 }
 
@@ -32,15 +32,15 @@
 }
 
 .catalog__text {
+  @include font(13px, 30px);
   margin-top: 5px;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  @include font(13px, 30px);
   color: $dark;
   border-bottom: 1px solid darken($color-bg, 2%);
 }
 
 .catalog__price {
-  margin-top: 5px;
   @include font-set(15px, 24px, bold);
+  margin-top: 5px;
 }

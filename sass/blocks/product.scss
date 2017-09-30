@@ -8,27 +8,27 @@
 }
 
 .product__title {
+  @include font-set(25px, 30px, bold);
   margin: 0;
   margin-top: 25px;
   margin-bottom: 5px;
-  @include font-set(25px, 30px, bold);
 }
 
 .product__week {
-  text-transform: uppercase;
   @include font-set(17px, 20px, bold);
+  text-transform: uppercase;
   color: $primary-color;
 }
 
 .product__desc {
-  margin-bottom: 20px;
   @include font(15px, 24px);
+  margin-bottom: 20px;
   color: $dark;
 }
 
 .product__info {
-  width: 100%;
   @include font(15px, 20px);
+  width: 100%;
   color: $dark;
   border-collapse: collapse;
 }
