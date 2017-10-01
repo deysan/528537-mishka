@@ -1,0 +1,14 @@
+.btn {
+  @include font-set(17px, 20px, bold);
+  display: inline-block;
+  padding: 15px;
+  border: 2px solid $dark;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  outline: none;
+  text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
+  color: $dark;
+}

@@ -1,0 +1,45 @@
+.main-nav {
+  min-height: 80px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  // display: none;
+  margin: 0;
+  border-top: 1px solid darken($color-bg, 2%);
+
+  &--logo {
+    @include center;
+  }
+}
+
+.main-nav__link {
+  @include font-set(17px, 24px, bold);
+  display: block;
+  padding-top: 28px;
+  padding-right: 30px;
+  padding-bottom: 28px;
+  padding-left: 76px;
+  text-decoration: none;
+  color: $black;
+
+  &--logo {
+    @include center;
+    min-height: 79px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,42 @@
+.production {
+  @include container;
+  margin: 30px;
+  padding: 30px;
+  border: 1px solid darken($color-bg, 2%);
+}
+
+.production__header {
+  margin-bottom: 30px;
+}
+
+.production__title {
+  @include font-set(17px, 24px, bold);
+  margin: 0;
+  padding-left: 60px;
+}
+
+.production__player {
+  @include center;
+  margin: 0 -30px;
+  margin-bottom: 25px;
+  text-align: center;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.production__player-btn {
+  position: absolute;
+}
+
+.production__text {
+  @include font(13px, 24px);
+  margin: 15px 0;
+  color: $dark;
+}
+
+.production__btn {
+  margin-top: 15px;
+}

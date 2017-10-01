@@ -1,0 +1,71 @@
+.product__wrapper {
+  @include container;
+}
+
+.product__header {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.product__title {
+  @include font-set(25px, 30px, bold);
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.product__week {
+  @include font-set(17px, 20px, bold);
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+.product__desc {
+  @include font(15px, 24px);
+  margin-bottom: 20px;
+  color: $dark;
+}
+
+.product__info {
+  @include font(15px, 20px);
+  width: 100%;
+  color: $dark;
+  border-collapse: collapse;
+}
+
+.product__info-row {
+  box-sizing: border-box;
+  border-bottom: 1px solid darken($color-bg, 2%);
+
+  td {
+    padding: 10px 0;
+  }
+}
+
+.product__info-name {
+  width: 33%;
+}
+
+.product__image {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.product__footer {
+  text-align: center;
+}
+
+.product__price {
+  @include font-set(17px, 24px, bold);
+  color: $dark;
+}
+
+.product__btn {
+  margin: 25px 0;
+}

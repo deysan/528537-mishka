@@ -1,0 +1,23 @@
+.about {
+  @include container;
+}
+
+.about__title {
+  @include font-set(25px, 30px, bold);
+  margin: 30px 0;
+}
+
+.about__list {
+  padding: 0;
+  list-style: none;
+}
+
+.about__item {
+  @include font-set(17px, 20px, bold);
+  margin-top: 30px;
+  padding-top: 55px;
+
+  &:last-child {
+    margin-bottom: 60px;
+  }
+}

@@ -1,0 +1,19 @@
+.category {
+  margin-bottom: 25px;
+}
+
+.category__item {
+  @include font-set(19px, 24px, bold);
+  display: block;
+  padding: 26px 30px;
+  text-decoration: none;
+  color: $white;
+
+  &--left {
+    background-color: $primary-color;
+  }
+
+  &--right {
+    background-color: lighten($secondary-color, 4%);
+  }
+}
