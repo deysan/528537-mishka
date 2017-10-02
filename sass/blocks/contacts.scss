@@ -1,0 +1,39 @@
+.contacts {
+  @include container;
+}
+
+.contacts__title {
+  @include font-set(18px, 30px, bold);
+  margin-top: 40px;
+}
+
+.contacts__info {
+  @include font(15px, 30px);
+  color: $dark;
+}
+
+.contacts__item {
+  margin-bottom: 30px;
+}
+
+.contacts__label {
+  margin-right: 30px;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: $dark;
+}
+
+.contacts__text {
+  display: inline-block;
+  margin: 0;
+}
+
+.contacts__map {
+  margin: 0 -30px;
+}
+
+.contacts__btn {
+  margin: 30px 0;
+}
