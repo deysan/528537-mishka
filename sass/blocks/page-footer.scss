@@ -1,15 +1,35 @@
 .page-footer {
-  margin-top: 30px;
   background-color: $color-bg;
+}
+
+.page-footer__logo {
+  display: none;
 }
 
 .page-footer__social,
 .page-footer__copyright {
-  @include container;
   @include center;
   min-height: 80px;
 }
 
 .page-footer__copyright {
   border-top: 1px solid darken($color-bg, 4%);
+}
+
+@media #{$tablet-width} {
+  .page-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    min-height: 140px;
+    padding: 0 50px;
+  }
+
+  .page-footer__logo {
+    @include center;
+  }
+
+  .page-footer__copyright {
+  border: none;
+}
 }

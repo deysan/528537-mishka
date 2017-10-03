@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Интернет-магазин «Мишка» — Милые штучки ручной работы для дома</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -10,25 +11,36 @@
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button">Открыть меню</button>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--top">
           <li class="main-nav__item main-nav__item--logo">
             <a class="main-nav__link main-nav__link--logo" href="index.html">
               <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка» — Милые штучки ручной работы для дома">
             </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          <li class="main-nav__item main-nav__item--top">
+            <a class="main-nav__link main-nav__link--top" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          <li class="main-nav__item main-nav__item--top">
+            <a class="main-nav__link main-nav__link--top" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
+        <ul class="main-nav__list main-nav__list--user">
+          <li class="main-nav__item main-nav__item--search">
             <a class="main-nav__link main-nav__link--search" href="#search">Поиск по сайту</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--cart">
             <a class="main-nav__link main-nav__link--cart" href="#cart">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list main-nav__list--bottom">
+          <li class="main-nav__item main-nav__item--bottom">
+            <a class="main-nav__link" href="#arrivals">Новые поступления</a>
+          </li>
+          <li class="main-nav__item main-nav__item--bottom">
+            <a class="main-nav__link" href="#sale">Распродажа</a>
+          </li>
+          <li class="main-nav__item main-nav__item--delivery">
+            <span class="main-nav__link-delivery">Бесплатная доставка по России</span>
           </li>
         </ul>
       </nav>
@@ -110,15 +122,17 @@
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__info">
-          <div class="contacts__item">
-            <span class="contacts__label">e-mail:</span>
-            <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </div>
-          <div class="contacts__item">
-            <span class="contacts__label">адрес:</span>
-            <p class="contacts__text">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</p>
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__info">
+            <div class="contacts__item">
+              <span class="contacts__label">e-mail:</span>
+              <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </div>
+            <div class="contacts__item">
+              <span class="contacts__label">адрес:</span>
+              <p class="contacts__text">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</p>
+            </div>
           </div>
         </div>
         <div class="contacts__map">
@@ -130,6 +144,11 @@
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-link" href="index.html">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка» — Милые штучки ручной работы для дома">
+        </a>
+      </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item"><a class="social__link social__link--in" href="#in">Мы в Инстаграме</a></li>

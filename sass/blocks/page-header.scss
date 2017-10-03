@@ -6,18 +6,45 @@
 
   &--index {
     display: block;
-    min-height: 209px;
-    padding-top: 70px;
+    min-height: 409px;
+    padding-top: 90px;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center -20px;
-    background-size: 575px 373px;
+    background-position: top center;
   }
 }
 
 .page-header__title {
   @include container;
   @include font-set(27px, 30px, bold);
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
+}
+
+@media #{$tablet-width} {
+  .page-header__intro {
+    &--index {
+      min-height: 578px;
+      padding-top: 160px;
+      background-image: url("../img/hero-desktop@1x.jpg");
+    }
+  }
+
+  .page-header__title {
+    @include font-set(43px, 50px, bold);
+  }
+}
+
+@media #{$desktop-width} {
+  .page-header__intro {
+    &--index {
+      min-height: 578px;
+      padding-top: 155px;
+    }
+  }
+
+  .page-header__title {
+    @include font-set(53px, 57px, bold);
+    width: 500px;
+  }
 }

@@ -39,3 +39,53 @@
 .reviews__btn {
   margin: 30px 0;
 }
+
+@media #{$tablet-width} {
+  .reviews__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .reviews__title {
+    @include font-set(43px, 50px, bold);
+  }
+
+  .reviews__slider {
+  }
+
+  .reviews__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__controls {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+  }
+
+  .reviews__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 175px;
+    margin: 18px 0;
+  }
+}
+
+@media #{$desktop-width} {
+  .reviews__title {
+    @include font-set(53px, 57px, bold);
+    padding-left: 175px;
+  }
+
+  .reviews__slider {
+    padding-left: 175px;
+  }
+
+  .reviews__btn {
+    margin: 22px 0;
+  }
+}

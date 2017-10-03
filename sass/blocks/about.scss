@@ -21,3 +21,59 @@
     margin-bottom: 60px;
   }
 }
+
+@media #{$tablet-width} {
+  .about__title {
+    @include font-set(43px, 50px, bold);
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    @include font-set(20px, 22px, bold);
+    width: 50%;
+    margin-top: 55px;
+    padding-right: 150px;
+    box-sizing: border-box;
+  }
+  .about__item:nth-child(1) {
+    order: 1;
+  }
+
+  .about__item:nth-child(2) {
+    order: 3;
+  }
+
+  .about__item:nth-child(3) {
+    order: 5;
+  }
+
+  .about__item:nth-child(4) {
+    order: 2;
+  }
+
+  .about__item:nth-child(5) {
+    order: 4;
+  }
+
+  .about__item:nth-child(6) {
+    order: 6;
+  }
+}
+
+@media #{$desktop-width} {
+  .about__title {
+    @include font-set(53px, 57px, bold);
+    padding-left: 175px;
+  }
+
+  .about__list {
+    padding-left: 175px;
+  }
+
+  .about__item {
+  }
+}
