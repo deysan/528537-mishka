@@ -113,10 +113,10 @@
     width: 50%;
 
     img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
     }
   }
 
@@ -135,6 +135,7 @@
 
 @media #{$desktop-width} {
   .product__wrapper {
+    //
   }
 
   .product__header {
@@ -159,10 +160,9 @@
   }
 
   .product__image {
-
     img {
-    top: -175px;
-    right: 0;
+      top: -175px;
+      right: 0;
     }
   }
 

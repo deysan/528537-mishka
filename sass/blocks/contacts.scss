@@ -43,6 +43,7 @@
     @include font-set(43px, 50px, bold);
     margin-bottom: 40px;
   }
+
   .contacts__info {
     display: flex;
     justify-content: flex-start;
@@ -51,9 +52,6 @@
   .contacts__item {
     flex-basis: 50%;
     margin-bottom: 45px;
-  }
-
-  .contacts__label {
   }
 
   .contacts__btn {
@@ -81,8 +79,5 @@
 
   .contacts__item {
     width: 350px;
-  }
-
-  .contacts__iframe {
   }
 }

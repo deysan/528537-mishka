@@ -39,6 +39,7 @@
     padding-right: 150px;
     box-sizing: border-box;
   }
+
   .about__item:nth-child(1) {
     order: 1;
   }
@@ -72,8 +73,5 @@
 
   .about__list {
     padding-left: 175px;
-  }
-
-  .about__item {
   }
 }
