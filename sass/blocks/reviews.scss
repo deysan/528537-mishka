@@ -41,8 +41,6 @@
 }
 
 @media #{$tablet-width} {
-  .reviews {
-  }
   .reviews__wrapper {
     position: relative;
     display: flex;
@@ -82,12 +80,11 @@
 }
 
 @media #{$desktop-width} {
-  .reviews {
-  }
   .reviews__wrapper {
     padding-left: 175px;
     box-sizing: border-box;
   }
+
   .reviews__title {
     @include font-set(53px, 57px, bold);
   }
