@@ -15,10 +15,10 @@
 }
 
 .page-header__title {
-  @include container;
   @include font-set(27px, 30px, bold);
   margin: 0 auto;
   text-align: center;
+  width: 320px;
 }
 
 @media #{$tablet-width} {
@@ -32,6 +32,7 @@
 
   .page-header__title {
     @include font-set(43px, 50px, bold);
+    width: 768px;
   }
 }
 
@@ -45,6 +46,6 @@
 
   .page-header__title {
     @include font-set(53px, 57px, bold);
-    width: 500px;
+    max-width: 1050px;
   }
 }

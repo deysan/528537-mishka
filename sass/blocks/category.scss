@@ -5,7 +5,9 @@
 
 .category__item {
   @include font-set(19px, 24px, bold);
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 26px 30px;
   text-decoration: none;
   color: $white;
@@ -17,6 +19,10 @@
   &--right {
     background-color: lighten($secondary-color, 4%);
   }
+}
+
+.category__title {
+  width: 150px;
 }
 
 @media #{$tablet-width} {

@@ -1,11 +1,14 @@
 @mixin container() {
-  min-width: 320px;
+  min-width: 260px;
+  max-width: 520px;
+  // width: 100%;
   padding: 0 30px;
   margin: 0 auto;
+  // box-sizing: border-box;
 
   @media #{$tablet-width} {
     // min-width: 648px;
-    // max-width: 668px;
+    max-width: 768px;
     padding: 0 50px;
   }
 

@@ -61,23 +61,44 @@
 
 @media #{$desktop-width} {
   .contacts {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 75px auto;
+    max-width: 1050px;
+  }
+
+  .contacts__wrapper {
+    position: relative;
+    padding-left: 175px;
+    padding-right: 0;
+    margin: 0;
   }
 
   .contacts__title {
     @include font-set(53px, 57px, bold);
-    padding-left: 175px;
-    margin-bottom: 60px;
+    margin: 60px 0;
   }
 
   .contacts__info {
-    padding-left: 175px;
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
   }
 
   .contacts__item {
-    width: 350px;
+    width: 300px;
+  }
+
+  .contacts__map {
+    width: 500px;
+    padding-right: 50px;
+  }
+
+  .contacts__btn {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
   }
 }

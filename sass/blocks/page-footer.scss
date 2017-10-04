@@ -2,6 +2,10 @@
   background-color: $color-bg;
 }
 
+.page-footer__wrapper {
+  @include container;
+}
+
 .page-footer__logo {
   display: none;
 }
@@ -14,12 +18,13 @@
 
 .page-footer__copyright {
   border-top: 1px solid darken($color-bg, 4%);
+  // box-sizing: border-box;
 }
 
 @media #{$tablet-width} {
-  .page-footer {
+  .page-footer__wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 10px;
     min-height: 140px;
     padding: 0 50px;

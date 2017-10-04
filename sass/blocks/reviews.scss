@@ -1,4 +1,4 @@
-.reviews {
+.reviews__wrapper {
   @include container;
 }
 
@@ -41,52 +41,54 @@
 }
 
 @media #{$tablet-width} {
+  .reviews {
+  }
   .reviews__wrapper {
-    display: flex;
-    flex-direction: column;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 110%;
+    background-position: top left;
   }
 
   .reviews__title {
     @include font-set(43px, 50px, bold);
-  }
-
-  .reviews__slider {
-    //
+    width: 30%;
+    order: -2;
   }
 
   .reviews__item {
-    position: relative;
     display: flex;
     flex-direction: column;
   }
 
   .reviews__controls {
     position: absolute;
-    bottom: 2px;
-    right: 0;
+    bottom: 52px;
+    right: 50px;
   }
 
   .reviews__btn {
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 175px;
-    margin: 18px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    order: -2;
   }
 }
 
 @media #{$desktop-width} {
+  .reviews {
+  }
+  .reviews__wrapper {
+    padding-left: 175px;
+    box-sizing: border-box;
+  }
   .reviews__title {
     @include font-set(53px, 57px, bold);
-    padding-left: 175px;
-  }
-
-  .reviews__slider {
-    padding-left: 175px;
-  }
-
-  .reviews__btn {
-    margin: 22px 0;
   }
 }
