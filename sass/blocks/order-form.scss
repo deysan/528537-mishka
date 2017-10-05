@@ -187,7 +187,6 @@
 
   .order-form__label {
     @include font-set(19px, 18px, bold);
-    // width: 20%;
     margin-top: 15px;
     padding-right: 25px;
   }
@@ -287,7 +286,7 @@
   }
 
   .order-form__input {
-    // width: 65%;
+    width: 65%;
     margin-right: 10%;
   }
 
