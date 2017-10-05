@@ -169,7 +169,7 @@
   .order-form__title {
     @include font-set(17px, 16px, bold);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 20%;
 
     &::after {
@@ -187,8 +187,9 @@
 
   .order-form__label {
     @include font-set(19px, 18px, bold);
-    width: 20%;
+    // width: 20%;
     margin-top: 15px;
+    padding-right: 25px;
   }
 
   .order-form__label-radio,
@@ -210,10 +211,11 @@
 
   .order-form__input {
     @include font(19px, 18px);
-    width: 80%;
+    width: 75%;
     margin-top: 15px;
     padding-left: 15px;
     padding-bottom: 15px;
+    flex-grow: 1;
   }
 
   input[type="tel"],
@@ -262,6 +264,7 @@
   }
 
   .order-form__promo {
+    padding-left: 100px;
     margin-bottom: 10px;
   }
 
@@ -271,7 +274,8 @@
   }
 
   .order-form__group {
-    width: 75%;
+    width: 70%;
+    padding-right: 50px;
   }
 
   .order-form__label-check {
@@ -283,7 +287,8 @@
   }
 
   .order-form__input {
-    width: 70%;
+    // width: 65%;
+    margin-right: 10%;
   }
 
   input[type="tel"],
@@ -295,7 +300,8 @@
     width: 90%;
   }
 
-  .order-form__footer {
-    width: 700px;
+  .order-form__footer-wrapper {
+    margin-left: 227px;
+    width: 63%;
   }
 }

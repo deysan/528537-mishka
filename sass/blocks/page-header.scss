@@ -1,6 +1,5 @@
 .page-header__intro {
-  @include center;
-  min-height: 179px;
+  min-height: 180px;
   background-color: #fafafa;
   border-top: 1px solid darken($color-bg, 2%);
 
@@ -10,6 +9,10 @@
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: top center;
+
+    .page-header__title {
+      padding-top: 85px;
+    }
   }
 }
 
@@ -19,7 +22,8 @@
 
 .page-header__title {
   @include font-set(27px, 30px, bold);
-  padding-top: 85px;
+  padding-top: 75px;
+  align-self: center;
   margin: 0 auto;
   text-align: center;
   width: 260px;
@@ -27,9 +31,15 @@
 
 @media #{$tablet-width} {
   .page-header__intro {
+    min-height: 240px;
+
     &--index {
       min-height: 735px;
       background-image: url("../img/hero-desktop@1x.jpg");
+
+      .page-header__title {
+        padding-top: 120px;
+      }
     }
   }
 
@@ -43,8 +53,8 @@
   }
 
   .page-header__title {
-    padding-top: 120px;
     @include font-set(43px, 50px, bold);
+    padding-top: 55px;
     min-width: 668px;
   }
 }
@@ -52,13 +62,14 @@
 @media #{$desktop-width} {
   .page-header__intro {
     &--index {
-      // min-height: 578px;
+      .page-header__title {
+        padding-top: 115px;
+      }
     }
   }
 
   .page-header__title {
     @include font-set(53px, 57px, bold);
-    padding-top: 115px;
     max-width: 1050px;
   }
 }
