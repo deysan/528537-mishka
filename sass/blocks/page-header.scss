@@ -6,46 +6,59 @@
 
   &--index {
     display: block;
-    min-height: 409px;
-    padding-top: 90px;
+    min-height: 500px;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: top center;
   }
 }
 
+.page-header__delivery {
+  display: none;
+}
+
 .page-header__title {
   @include font-set(27px, 30px, bold);
+  padding-top: 85px;
   margin: 0 auto;
   text-align: center;
-  width: 320px;
+  width: 260px;
 }
 
 @media #{$tablet-width} {
   .page-header__intro {
     &--index {
-      min-height: 578px;
-      padding-top: 160px;
+      min-height: 735px;
       background-image: url("../img/hero-desktop@1x.jpg");
     }
   }
 
+  .page-header__delivery {
+    @include container;
+    @include font(15px, 24px);
+    display: block;
+    margin-top: 15px;
+    text-align: right;
+    color: $dark;
+  }
+
   .page-header__title {
+    padding-top: 120px;
     @include font-set(43px, 50px, bold);
-    width: 768px;
+    min-width: 668px;
   }
 }
 
 @media #{$desktop-width} {
   .page-header__intro {
     &--index {
-      min-height: 578px;
-      padding-top: 155px;
+      // min-height: 578px;
     }
   }
 
   .page-header__title {
     @include font-set(53px, 57px, bold);
+    padding-top: 115px;
     max-width: 1050px;
   }
 }

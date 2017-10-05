@@ -9,27 +9,31 @@
   <body>
 
     <header class="page-header">
-      <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--logo">
             <a class="main-nav__link main-nav__link--logo" href="index.html">
               <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка» — Милые штучки ручной работы для дома">
             </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          <li class="main-nav__item main-nav__item--catalog">
+            <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="form.html">Вязание на заказ</a>
+          <li class="main-nav__item main-nav__item--form">
+            <a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a>
           </li>
-        </ul>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--search">
             <a class="main-nav__link main-nav__link--search" href="#search">Поиск по сайту</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--cart">
             <a class="main-nav__link main-nav__link--cart" href="#cart">Корзина: пока пуста</a>
+          </li>
+          <li class="main-nav__item main-nav__item--arrivals">
+            <a class="main-nav__link main-nav__link--arrivals" href="#arrivals">Новые поступления</a>
+          </li>
+          <li class="main-nav__item main-nav__item--sale">
+            <a class="main-nav__link main-nav__link--sale" href="#sale">Распродажа</a>
           </li>
         </ul>
       </nav>

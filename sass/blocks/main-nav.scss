@@ -15,10 +15,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
-  &--bottom {
-    display: none;
-  }
 }
 
 .main-nav__item {
@@ -28,6 +24,11 @@
 
   &--logo {
     @include center;
+  }
+
+  &--arrivals,
+  &--sale {
+    display: none;
   }
 }
 
@@ -49,164 +50,131 @@
 }
 
 @media #{$tablet-width} {
-  .main-nav {
-    // @include container;
-    // display: flex;
-    // flex-wrap: wrap;
-    width: auto;
-    // height: 90px;
-  }
-
   .main-nav__toggle {
     display: none;
   }
 
   .main-nav__list {
+    @include container;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    // height: 89px;
-
-    // &--top {
-    //   justify-content: flex-start;
-    //   flex-basis: 50%;
-    //   flex-wrap: wrap;
-    // }
-
-    // &--user {
-    //   justify-content: flex-end;
-    //   flex-basis: 50%;
-    // }
-
-    // &--bottom {
-    //   align-items: flex-start;
-    //   margin-left: auto;
-    //   padding-top: 20px;
-    // }
+    height: 89px;
   }
 
   .main-nav__item {
-    // display: flex;
     border: none;
 
     &--logo {
+      width: 44%;
       justify-content: flex-start;
-      flex-basis: 100%;
-      height: 100%;
+      order: 1;
     }
 
-    &--top {
-      width: 167px;
-      padding-top: 20px;
+    &--search {
+      margin-left: auto;
+      border-left: 1px solid darken($color-bg, 2%);
+      order: 2;
     }
 
-    &--bottom {
-      display: none;
+    &--cart {
+      border-left: 1px solid darken($color-bg, 2%);
+      order: 3;
+    }
+
+    &--catalog,
+    &--form {
+      margin-top: 15px;
+      padding-right: 35px;
+      order: 4;
     }
   }
 
   .main-nav__link {
-    @include font-set(15px, 24px, bold);
+    @include font-set(17px, 24px, bold);
     padding: 0;
 
     &--logo {
-      // height: 35px;
+      height: auto;
     }
 
     &--search {
+      width: 90px;
+      padding: 33px 0;
       font-size: 0;
     }
-  }
 
-  .main-nav__link-delivery {
-    @include font(15px, 24px);
-    color: $dark;
+    &--cart {
+      padding: 33px 0;
+      padding-left: 90px;
+    }
+
+    &--catalog,
+    &--form {
+      @include font-set(15px, 24px, bold);
+    }
   }
 }
 
 @media #{$desktop-width} {
-  .main-nav__list {
-    max-width: 1050px;
-    margin: 0 auto;
-    // justify-content: space-between;
-    align-items: center;
-
-    &--top {
-      justify-content: flex-start;
-      flex-basis: auto;
-      flex-wrap: nowrap;
-      flex-grow: 4;
-    }
-
-    &--user {
-      justify-content: flex-end;
-      flex-basis: auto;
-      flex-grow: 1;
-    }
-
-    &--bottom {
-      margin: 0;
-      padding-top: 20px;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-basis: 100%;
-      // flex-grow: 1;
-      // margin-left: auto;
-    }
-
-    &--delivery {
-      flex-grow: 5;
-    }
-  }
-
   .main-nav__item {
-    // display: flex;
-    border: none;
+    &--catalog,
+    &--form {
+      margin-top: 0;
+      padding-right: 0;
+      order: 1;
+    }
 
+    &--form {
+      border-left: 1px solid darken($color-bg, 2%);
+      margin-right: auto;
+    }
     &--logo {
+      width: 20%;
       justify-content: center;
       order: 2;
-      // margin: auto;
-    }
-
-    &--top {
-      justify-content: flex-start;
-      padding-top: 0;
-      // order: 1;
-      width: 185px;
-      padding-right: 30px;
-      flex-basis: 400px;
-    }
-
-    &--user {
-      //
     }
 
     &--search {
-      padding-left: 90px;
+      margin-left: auto;
+      order: 3;
     }
 
     &--cart {
-      padding-left: 90px;
+      order: 4;
     }
 
-    &--bottom {
+    &--arrivals,
+    &--sale {
       display: block;
-    }
-
-    &--delivery {
-      //
+      margin-top: 15px;
+      padding-right: 58px;
+      order: 5;
     }
   }
 
   .main-nav__link {
-    &--top,
-    &--search,
-    &--cart {
-      @include font-set(17px, 24px, bold);
+    &--logo {
+      height: auto;
     }
 
-    &--search {
-      font-size: 0;
+    &--catalog,
+    &--form {
+      @include font-set(17px, 24px, bold);
+      padding: 33px;
+    }
+
+    &--catalog {
+      padding-left: 0;
+    }
+
+    &--form {
+      padding-right: 0;
+    }
+
+    &--arrivals,
+    &--sale {
+      @include font-set(15px, 24px, bold);
     }
   }
 }
