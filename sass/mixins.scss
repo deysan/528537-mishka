@@ -1,6 +1,27 @@
 @mixin container() {
+  min-width: 260px;
+  max-width: 520px;
+  // width: 100%;
   padding: 0 30px;
   margin: 0 auto;
+  // box-sizing: border-box;
+
+  @media #{$tablet-width} {
+    // min-width: 648px;
+    max-width: 768px;
+    padding: 0 50px;
+  }
+
+  @media #{$desktop-width} {
+    // min-width: 1030px;
+    max-width: 1050px;
+  }
+}
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin font($size, $line-height) {
@@ -18,10 +39,4 @@
   transition-property: $property;
   transition-duration: $time;
   transition-timing-function: $transition;
-}
-
-@mixin center() {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

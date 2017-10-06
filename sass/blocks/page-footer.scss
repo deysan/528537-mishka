@@ -1,15 +1,40 @@
 .page-footer {
-  margin-top: 30px;
   background-color: $color-bg;
+}
+
+.page-footer__wrapper {
+  @include container;
+}
+
+.page-footer__logo {
+  display: none;
 }
 
 .page-footer__social,
 .page-footer__copyright {
-  @include container;
   @include center;
   min-height: 80px;
 }
 
 .page-footer__copyright {
   border-top: 1px solid darken($color-bg, 4%);
+  // box-sizing: border-box;
+}
+
+@media #{$tablet-width} {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    min-height: 140px;
+    padding: 0 50px;
+  }
+
+  .page-footer__logo {
+    @include center;
+  }
+
+  .page-footer__copyright {
+    border: none;
+  }
 }
