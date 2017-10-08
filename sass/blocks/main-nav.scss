@@ -59,7 +59,6 @@
 }
 
 .main-nav__item a[href] {
-
     &:hover {
       opacity: 0.6;
     }
@@ -112,7 +111,6 @@
     background-repeat: no-repeat;
     background-position: 31px 31px;
   }
-
 }
 
 @media #{$mobile-width-only} {

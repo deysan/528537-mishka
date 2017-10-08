@@ -35,7 +35,7 @@
     margin-bottom: 51px;
 
     &--index {
-      min-height: 735px;
+      min-height: 684px;
       background-image: url("../img/hero-desktop@1x.jpg");
       background-position: center -2px;
 
@@ -67,6 +67,8 @@
     margin-bottom: 70px;
 
     &--index {
+      min-height: 665px;
+
       .page-header__title {
         padding-top: 115px;
       }
