@@ -1,7 +1,11 @@
+.order-form {
+  margin-bottom: 25px;
+}
+
 .order-form__promo {
   @include container;
   @include font(13px, 24px);
-  margin: 25px auto;
+  margin: 24px auto 10px;
   color: $dark;
 }
 
@@ -24,7 +28,7 @@
   @include font-set(16px, 17px, bold);
   position: relative;
   margin-top: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   color: $primary-color;
   text-transform: uppercase;
 
@@ -72,10 +76,13 @@
   }
 }
 
-.order-form__input-radio:checked + ::before,
-.order-form__input-check:checked + ::before {
+.order-form__input-radio:checked + ::before {
   background-color: $primary-color;
   box-shadow: inset 0 0 0 10px $white;
+}
+
+.order-form__input-check:checked + ::before {
+  background: url("../../img/icon-tick.svg") no-repeat center;
 }
 
 .order-form__label {
@@ -89,7 +96,7 @@
   display: block;
   width: 100%;
   padding-bottom: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   color: $dark;
   border: none;
   border-bottom: 2px solid $black;
@@ -103,12 +110,17 @@
   &::placeholder {
     color: rgba($dark, 0.3);
   }
+
+  &[type="tel"] {
+    margin-bottom: 30px;
+  }
 }
 
 .order-form__textarea {
   @include font(17px, 18px);
   display: block;
   width: 100%;
+  height: 140px;
   padding: 15px;
   margin-top: 15px;
   color: $dark;
@@ -140,7 +152,6 @@
 
 @media #{$tablet-width} {
   .order-form {
-    margin-top: 65px;
     padding: 0;
   }
 
@@ -153,6 +164,12 @@
 
   .order-form__fieldset:nth-child(2n+1) {
     background-color: $color-bg;
+  }
+
+  .order-form__fieldset:nth-child(5) {
+    & .order-form__wrapper {
+      padding-bottom: 33px;
+    }
   }
 
   .order-form__wrapper {
@@ -170,7 +187,8 @@
     @include font-set(17px, 16px, bold);
     display: flex;
     justify-content: flex-start;
-    width: 20%;
+    width: 25%;
+    margin-top: 25px;
 
     &::after {
       display: none;
@@ -182,7 +200,7 @@
     flex-wrap: wrap;
     align-items: baseline;
     margin: 0;
-    width: 80%;
+    width: 75%;
   }
 
   .order-form__label {
@@ -194,10 +212,20 @@
   .order-form__label-radio,
   .order-form__label-check {
     @include font-set(19px, 18px, bold);
+    margin-bottom: 25px;
 
     &:nth-last-child(-n+3):not(:nth-child(2)) {
       margin-bottom: 0;
     }
+
+    &::before {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .order-form__input-radio:checked + ::before {
+    box-shadow: inset 0 0 0 14px $white;
   }
 
   .order-form__label-radio {
@@ -212,6 +240,7 @@
     @include font(19px, 18px);
     width: 75%;
     margin-top: 15px;
+    margin-bottom: 20px;
     padding-left: 15px;
     padding-bottom: 15px;
     flex-grow: 1;
@@ -220,12 +249,8 @@
   input[type="tel"],
   input[type="email"] {
     width: 100%;
-    margin-top: 12px;
+    margin-top: 10px;
     background-color: $color-bg;
-  }
-
-  input[type="email"] {
-    margin-top: 12px;
   }
 
   .order-form__textarea {
@@ -259,21 +284,22 @@
 
 @media #{$desktop-width} {
   .order-form {
-    margin-top: 120px;
+    margin-top: 55px;
   }
 
   .order-form__promo {
-    padding-left: 100px;
-    margin-bottom: 10px;
+    padding-left: 60px;
+    margin-bottom: 5px;
   }
 
   .order-form__title {
+    width: 115px;
     padding-left: 60px;
-    width: 167px;
+    margin: 20px 0;
   }
 
   .order-form__group {
-    width: 70%;
+    width: 74%;
     padding-right: 50px;
   }
 
@@ -300,7 +326,12 @@
   }
 
   .order-form__footer-wrapper {
-    margin-left: 227px;
-    width: 63%;
+    margin-left: 175px;
+    width: 67%;
+  }
+
+  .order-form__btn {
+    width: 33%;
+    margin: 0;
   }
 }

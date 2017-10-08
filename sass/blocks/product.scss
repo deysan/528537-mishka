@@ -1,3 +1,7 @@
+.product {
+  margin-bottom: 40px;
+}
+
 .product__wrapper {
   @include container;
 }
@@ -22,7 +26,7 @@
 
 .product__desc {
   @include font(15px, 24px);
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   color: $dark;
 }
 
@@ -38,12 +42,12 @@
   border-bottom: 1px solid darken($color-bg, 2%);
 
   td {
-    padding: 10px 0;
+    padding: 9px 0;
   }
 }
 
 .product__info-name {
-  width: 33%;
+  width: 37.5%;
 }
 
 .product__image {
@@ -71,12 +75,15 @@
 }
 
 @media #{$tablet-width} {
+  .product {
+    margin-bottom: 120px;
+  }
+
   .product__wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    // box-sizing: border-box;
   }
 
   .product__header {
@@ -84,6 +91,7 @@
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
+    margin-top: 20px;
     margin-bottom: 50px;
   }
 
@@ -107,8 +115,19 @@
   }
 
   .product__desc {
+    @include font(17px, 30px);
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
+  }
+
+  .product__info-row {
+    td {
+      padding-top: 10px;
+    }
+  }
+
+  .product__info-name {
+    width: 33.3%;
   }
 
   .product__image {
@@ -120,9 +139,9 @@
   }
 
   .product__footer {
-    margin-top: 35px;
+    margin-top: 36px;
     width: 50%;
-    padding-right: 40px;
+    padding-right: 45px;
     box-sizing: border-box;
   }
 
@@ -131,17 +150,21 @@
   }
 
   .product__btn {
-    margin-top: 30px;
+    margin-top: 33px;
     margin-bottom: 0;
   }
 }
 
 @media #{$desktop-width} {
+  .product {
+    margin-bottom: 155px;
+  }
+
   .product__header {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-end;
-    margin-top: 100px;
+    // margin-top: 100px;
   }
 
   .product__title {
@@ -156,16 +179,24 @@
   .product__content {
     padding-left: 175px;
     padding-right: 55px;
+    margin-bottom: 74px;
+  }
+
+  .product__desc {
+    margin-bottom: 46px;
+  }
+
+  .product__info-name {
+    width: 33.3%;
   }
 
   .product__image {
-    top: 50px;
+    top: -40px;
     right: 50px;
     width: 525px;
   }
 
   .product__footer {
-    margin-top: 114px;
     padding-right: 55px;
     padding-left: 175px;
   }

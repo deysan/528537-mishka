@@ -11,4 +11,13 @@
   color: $dark;
   box-sizing: border-box;
   outline: none;
+
+  &:hover {
+    color: $white;
+    background-color: $dark;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
 }

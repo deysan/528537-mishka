@@ -8,7 +8,7 @@
 }
 
 .production__header {
-  margin: 30px;
+  margin: 22px 30px;
 }
 
 .production__title {
@@ -32,16 +32,13 @@
 }
 
 .production__desc {
-  margin: 30px;
+  margin: 30px 32px;
 }
 
 .production__text {
   @include font(13px, 24px);
+  margin-bottom: 24px;
   color: $dark;
-}
-
-.production__btn {
-  margin-top: 15px;
 }
 
 @media #{$tablet-width} {
@@ -86,7 +83,7 @@
     display: flex;
     justify-content: flex-end;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 
   .production__wrapper {
