@@ -59,13 +59,13 @@
 }
 
 .main-nav__item a[href] {
-    &:hover {
-      opacity: 0.6;
-    }
+  &:hover {
+    opacity: 0.6;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__item {
