@@ -2,39 +2,45 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Каталог | Интернет-магазин «Мишка» — Милые штучки ручной работы для дома</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--logo">
             <a class="main-nav__link main-nav__link--logo" href="index.html">
               <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка» — Милые штучки ручной работы для дома">
             </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="catalog.html">Каталог товаров</a>
+          <li class="main-nav__item main-nav__item--catalog">
+            <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          <li class="main-nav__item main-nav__item--form">
+            <a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a>
           </li>
-        </ul>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--search">
             <a class="main-nav__link main-nav__link--search" href="#search">Поиск по сайту</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--cart">
             <a class="main-nav__link main-nav__link--cart" href="#cart">Корзина: пока пуста</a>
+          </li>
+          <li class="main-nav__item main-nav__item--arrivals">
+            <a class="main-nav__link main-nav__link--arrivals" href="#arrivals">Новые поступления</a>
+          </li>
+          <li class="main-nav__item main-nav__item--sale">
+            <a class="main-nav__link main-nav__link--sale" href="#sale">Распродажа</a>
           </li>
         </ul>
       </nav>
-      <section class="page-header__intro">
+      <div class="page-header__intro">
+        <p class="page-header__delivery">Бесплатная доставка по России</p>
         <h1 class="page-header__title">Каталог товаров</h1>
-      </section>
+      </div>
     </header>
 
     <main class="page-main">
@@ -94,32 +100,41 @@
       </section>
 
       <section class="production">
-        <div class="production__header">
-          <h2 class="production__title">Процесс производства</h2>
-        </div>
-        <div class="production__player">
-          <img class="production__video" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства">
-          <button class="production__player-btn" type="button" title="Воспроизвести">Воспроизвести</button>
-        </div>
-        <div class="production__desc">
-          <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="production__btn btn" href="form.html">Сделать заказ</a>
+        <div class="production__wrapper">
+          <div class="production__header">
+            <h2 class="production__title">Процесс производства</h2>
+          </div>
+          <div class="production__player">
+            <img class="production__video" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства">
+            <button class="production__player-btn" type="button" title="Воспроизвести">Воспроизвести</button>
+          </div>
+          <div class="production__desc">
+            <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="production__btn btn" href="form.html">Сделать заказ</a>
+          </div>
         </div>
       </section>
 
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item"><a class="social__link social__link--in" href="#in">Мы в Инстаграме</a></li>
-          <li class="social__item"><a class="social__link social__link--fb" href="#fb">Мы в Фейсбуке</a></li>
-          <li class="social__item"><a class="social__link social__link--tw" href="#tw">Мы в Твиттере</a></li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/profile/id528537">HTML Academy</a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link" href="index.html">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка» — Милые штучки ручной работы для дома">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link social__link--in" href="#in">Мы в Инстаграме</a></li>
+            <li class="social__item"><a class="social__link social__link--fb" href="#fb">Мы в Фейсбуке</a></li>
+            <li class="social__item"><a class="social__link social__link--tw" href="#tw">Мы в Твиттере</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/profile/id528537">HTML Academy</a>
+        </div>
       </div>
     </footer>
 

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Интернет-магазин «Мишка» — Милые штучки ручной работы для дома</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -16,32 +17,41 @@
               <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка» — Милые штучки ручной работы для дома">
             </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          <li class="main-nav__item main-nav__item--catalog">
+            <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          <li class="main-nav__item main-nav__item--form">
+            <a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a>
           </li>
-        </ul>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--search">
             <a class="main-nav__link main-nav__link--search" href="#search">Поиск по сайту</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--cart">
             <a class="main-nav__link main-nav__link--cart" href="#cart">Корзина: пока пуста</a>
+          </li>
+          <li class="main-nav__item main-nav__item--arrivals">
+            <a class="main-nav__link main-nav__link--arrivals" href="#arrivals">Новые поступления</a>
+          </li>
+          <li class="main-nav__item main-nav__item--sale">
+            <a class="main-nav__link main-nav__link--sale" href="#sale">Распродажа</a>
           </li>
         </ul>
       </nav>
-      <section class="page-header__intro page-header__intro--index">
-        <h1 class="page-header__title">Милые штучки ручной работы для дома <span class="visually-hidden">«Мишка»</span></h1>
-      </section>
+      <div class="page-header__intro page-header__intro--index">
+        <p class="page-header__delivery">Бесплатная доставка по России</p>
+        <h1 class="page-header__title">Милые штучки ручной работы&nbsp;для&nbsp;дома <span class="visually-hidden">«Мишка»</span></h1>
+      </div>
     </header>
 
     <main class="page-main">
 
       <div class="category">
-        <a class="category__item category__item--left" href="catalog.html">Предметы<br> интерьера</a>
-        <a class="category__item category__item--right" href="catalog.html">Детские<br> игрушки</a>
+        <a class="category__item category__item--left" href="catalog.html">
+          <span class="category__title">Предметы интерьера</span>
+        </a>
+        <a class="category__item category__item--right" href="catalog.html">
+          <span class="category__title">Детские игрушки</span>
+        </a>
       </div>
 
       <article class="product">
@@ -80,12 +90,12 @@
       <section class="about">
         <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__list">
-          <li class="about__item about__item--flower">Экологически чистые материалы</li>
-          <li class="about__item about__item--money">Скандинавский стиль по российской цене</li>
-          <li class="about__item about__item--heart">Увеличивает лайки на фотографиях</li>
-          <li class="about__item about__item--ball">Связано вручную с любовью и умилением</li>
-          <li class="about__item about__item--rocket">Поддержка отечественного производителя</li>
-          <li class="about__item about__item--gift">Поставляется в подарочной упаковке</li>
+          <li class="about__item about__item--flower">Экологически чистые&nbsp;материалы</li>
+          <li class="about__item about__item--money">Скандинавский стиль по&nbsp;российской&nbsp;цене</li>
+          <li class="about__item about__item--heart">Увеличивает лайки на&nbsp;фотографиях</li>
+          <li class="about__item about__item--ball">Связано вручную с любовью&nbsp;и&nbsp;умилением</li>
+          <li class="about__item about__item--rocket">Поддержка&nbsp;отечественного производителя</li>
+          <li class="about__item about__item--gift">Поставляется в подарочной&nbsp;упаковке</li>
         </ul>
       </section>
 
@@ -104,42 +114,53 @@
               <button class="reviews__link reviews__link--prev" type="button">Предыдущий отзыв</button>
               <button class="reviews__link reviews__link--next" type="button">Следующий отзыв</button>
             </div>
-            <a class="reviews__btn btn" href="#comment" >Написать</a>
           </div>
+          <a class="reviews__btn btn" href="#comment">Написать</a>
         </div>
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__info">
-          <div class="contacts__item">
-            <span class="contacts__label">e-mail:</span>
-            <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </div>
-          <div class="contacts__item">
-            <span class="contacts__label">адрес:</span>
-            <p class="contacts__text">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</p>
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__info">
+            <div class="contacts__item">
+              <span class="contacts__label">e-mail:</span>
+              <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </div>
+            <div class="contacts__item">
+              <span class="contacts__label">адрес:</span>
+              <p class="contacts__text">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</p>
+            </div>
           </div>
         </div>
         <div class="contacts__map">
           <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7582790791953!2d30.320107651576738!3d59.93615306917235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f80c638c5%3A0x3d85851143d1f897!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4!5e0!3m2!1sru!2sua!4v1506270269785" width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-        <a class="contacts__btn btn" href="#feedback" >Напишите нам</a>
+        <div class="contacts__wrapper">
+          <a class="contacts__btn btn" href="#feedback" >Напишите нам</a>
+        </div>
       </section>
 
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item"><a class="social__link social__link--in" href="#in">Мы в Инстаграме</a></li>
-          <li class="social__item"><a class="social__link social__link--fb" href="#fb">Мы в Фейсбуке</a></li>
-          <li class="social__item"><a class="social__link social__link--tw" href="#tw">Мы в Твиттере</a></li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/profile/id528537">HTML Academy</a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link" href="index.html">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка» — Милые штучки ручной работы для дома">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link social__link--in" href="#in">Мы в Инстаграме</a></li>
+            <li class="social__item"><a class="social__link social__link--fb" href="#fb">Мы в Фейсбуке</a></li>
+            <li class="social__item"><a class="social__link social__link--tw" href="#tw">Мы в Твиттере</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/profile/id528537">HTML Academy</a>
+        </div>
       </div>
     </footer>
 

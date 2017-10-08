@@ -25,6 +25,11 @@
   &--logo {
     @include center;
   }
+
+  &--arrivals,
+  &--sale {
+    display: none;
+  }
 }
 
 .main-nav__link {
@@ -39,7 +44,138 @@
 
   &--logo {
     @include center;
-    min-height: 79px;
     padding: 0;
+    height: 79px;
+  }
+}
+
+@media #{$tablet-width} {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    @include container;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 89px;
+  }
+
+  .main-nav__item {
+    border: none;
+
+    &--logo {
+      width: 44%;
+      justify-content: flex-start;
+      order: 1;
+    }
+
+    &--search {
+      margin-left: auto;
+      border-left: 1px solid darken($color-bg, 2%);
+      order: 2;
+    }
+
+    &--cart {
+      border-left: 1px solid darken($color-bg, 2%);
+      order: 3;
+    }
+
+    &--catalog,
+    &--form {
+      margin-top: 15px;
+      padding-right: 35px;
+      order: 4;
+    }
+  }
+
+  .main-nav__link {
+    @include font-set(17px, 24px, bold);
+    padding: 0;
+
+    &--logo {
+      height: auto;
+    }
+
+    &--search {
+      width: 90px;
+      padding: 33px 0;
+      font-size: 0;
+    }
+
+    &--cart {
+      padding: 33px 0;
+      padding-left: 90px;
+    }
+
+    &--catalog,
+    &--form {
+      @include font-set(15px, 24px, bold);
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .main-nav__item {
+    &--catalog,
+    &--form {
+      margin-top: 0;
+      padding-right: 0;
+      order: 1;
+    }
+
+    &--form {
+      border-left: 1px solid darken($color-bg, 2%);
+      margin-right: auto;
+    }
+
+    &--logo {
+      width: 20%;
+      justify-content: center;
+      order: 2;
+    }
+
+    &--search {
+      margin-left: auto;
+      order: 3;
+    }
+
+    &--cart {
+      order: 4;
+    }
+
+    &--arrivals,
+    &--sale {
+      display: block;
+      margin-top: 15px;
+      padding-right: 58px;
+      order: 5;
+    }
+  }
+
+  .main-nav__link {
+    &--logo {
+      height: auto;
+    }
+
+    &--catalog,
+    &--form {
+      @include font-set(17px, 24px, bold);
+      padding: 33px;
+    }
+
+    &--catalog {
+      padding-left: 0;
+    }
+
+    &--form {
+      padding-right: 0;
+    }
+
+    &--arrivals,
+    &--sale {
+      @include font-set(15px, 24px, bold);
+    }
   }
 }

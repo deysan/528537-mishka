@@ -14,10 +14,67 @@
 
 .about__item {
   @include font-set(17px, 20px, bold);
+  // width: 320px;
   margin-top: 30px;
   padding-top: 55px;
 
   &:last-child {
     margin-bottom: 60px;
+  }
+}
+
+@media #{$tablet-width} {
+  .about__title {
+    @include font-set(43px, 50px, bold);
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    @include font-set(20px, 22px, bold);
+    width: 50%;
+    margin-top: 55px;
+    box-sizing: border-box;
+    padding-right: 100px;
+  }
+
+  .about__item:nth-child(1) {
+    padding-right: 80px;
+    order: 1;
+  }
+
+  .about__item:nth-child(2) {
+    order: 3;
+  }
+
+  .about__item:nth-child(3) {
+    order: 5;
+  }
+
+  .about__item:nth-child(4) {
+    padding-right: 79px;
+    order: 2;
+  }
+
+  .about__item:nth-child(5) {
+    order: 4;
+  }
+
+  .about__item:nth-child(6) {
+    order: 6;
+  }
+}
+
+@media #{$desktop-width} {
+  .about__title {
+    @include font-set(53px, 57px, bold);
+    padding-left: 175px;
+  }
+
+  .about__list {
+    padding-left: 175px;
   }
 }
