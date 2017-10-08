@@ -4,17 +4,69 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 30px;
-  right: 30px;
-  width: 20px;
-  height: 20px;
-  font-size: 0;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  z-index: 2;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  &--closed::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--opened::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 21px;
+    height: 21px;
+    background-image: url("../../img/icon-menu-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--nojs {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.main-nav__item a[href] {
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 }
 
 .main-nav__item {
@@ -22,13 +74,13 @@
   margin: 0;
   border-top: 1px solid darken($color-bg, 2%);
 
-  &--logo {
-    @include center;
-  }
-
   &--arrivals,
   &--sale {
     display: none;
+  }
+
+  &--cart {
+    border-bottom: 1px solid darken($color-bg, 2%);
   }
 }
 
@@ -41,11 +93,52 @@
   padding-left: 76px;
   text-decoration: none;
   color: $black;
+  // cursor: pointer;
 
   &--logo {
     @include center;
     padding: 0;
     height: 79px;
+  }
+
+  &--search {
+    background-image: url("../../img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: 31px 31px;
+  }
+
+  &--cart {
+    background-image: url("../../img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 31px 31px;
+  }
+
+}
+
+@media #{$mobile-width-only} {
+  .main-nav--closed .main-nav__item {
+    display: none;
+
+    &--logo {
+      @include center;
+    }
+  }
+
+  .main-nav--opened .main-nav__list {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: $white;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+
+    &--arrivals,
+    &--sale {
+      display: none;
+    }
   }
 }
 
@@ -67,7 +160,6 @@
 
     &--logo {
       width: 44%;
-      justify-content: flex-start;
       order: 1;
     }
 
@@ -85,7 +177,7 @@
     &--catalog,
     &--form {
       margin-top: 15px;
-      padding-right: 35px;
+      padding-right: 34px;
       order: 4;
     }
   }
@@ -96,17 +188,20 @@
 
     &--logo {
       height: auto;
+      justify-content: flex-start;
     }
 
     &--search {
-      width: 90px;
+      width: 83px;
       padding: 33px 0;
       font-size: 0;
+      background-position: center;
     }
 
     &--cart {
       padding: 33px 0;
-      padding-left: 90px;
+      padding-left: 83px;
+      background-position: 31px 35px;
     }
 
     &--catalog,
@@ -117,6 +212,11 @@
 }
 
 @media #{$desktop-width} {
+  .main-nav__list {
+    max-width: 1150px;
+    padding: 0;
+  }
+
   .main-nav__item {
     &--catalog,
     &--form {
@@ -127,17 +227,17 @@
 
     &--form {
       border-left: 1px solid darken($color-bg, 2%);
-      margin-right: auto;
+      margin-right: 60px;
     }
 
     &--logo {
-      width: 20%;
-      justify-content: center;
+      flex-grow: 1;
+      width: auto;
       order: 2;
     }
 
     &--search {
-      margin-left: auto;
+      margin-left: 0;
       order: 3;
     }
 
@@ -149,28 +249,29 @@
     &--sale {
       display: block;
       margin-top: 15px;
-      padding-right: 58px;
+      padding-left: 50px;
+      padding-right: 10px;
       order: 5;
     }
   }
 
   .main-nav__link {
-    &--logo {
-      height: auto;
+    &--cart {
+      padding-right: 50px;
     }
 
     &--catalog,
     &--form {
       @include font-set(17px, 24px, bold);
-      padding: 33px;
+      padding: 33px 35px;
     }
 
     &--catalog {
-      padding-left: 0;
+      padding-left: 50px;
     }
 
     &--form {
-      padding-right: 0;
+      padding-right: 50px;
     }
 
     &--arrivals,
