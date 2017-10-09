@@ -5,6 +5,14 @@
 
 .production__wrapper {
   border: 1px solid darken($color-bg, 2%);
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
+  }
 }
 
 .production__header {

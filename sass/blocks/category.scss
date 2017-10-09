@@ -15,7 +15,8 @@
   &--left {
     background-color: $primary-color;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: darken($primary-color, 2%);
     }
 
@@ -27,7 +28,8 @@
   &--right {
     background-color: lighten($secondary-color, 4%);
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $secondary-color;
     }
 
@@ -46,18 +48,25 @@
     @include container;
     display: flex;
     justify-content: space-between;
-    margin-top: -110px;
+    margin-top: -169px;
   }
 
   .category__item {
     padding: 35px;
     flex-basis: 50%;
+
+    &:hover {
+      margin-top: -5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
   }
 }
 
 @media #{$desktop-width} {
   .category {
     margin-bottom: 83px;
+    margin-top: -187px;
   }
 
   .category__item {

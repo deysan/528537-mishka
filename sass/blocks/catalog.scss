@@ -7,6 +7,14 @@
 .catalog__item {
   margin-top: 30px;
   border: 1px solid darken($color-bg, 2%);
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
+  }
 }
 
 .catalog__image {
@@ -27,6 +35,14 @@
   margin: 0;
   margin-bottom: 5px;
   color: $black;
+
+  &:hover {
+    color: rgba($black, 0.6);
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
+  }
 }
 
 .catalog__title-link {
