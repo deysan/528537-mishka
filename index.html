@@ -10,10 +10,10 @@
 
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button">Открыть меню</button>
+        <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--logo">
-            <a class="main-nav__link main-nav__link--logo" href="index.html">
+            <a class="main-nav__link main-nav__link--logo">
               <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка» — Милые штучки ручной работы для дома">
             </a>
           </li>
@@ -132,11 +132,9 @@
               <p class="contacts__text">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</p>
             </div>
           </div>
-        </div>
-        <div class="contacts__map">
-          <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7582790791953!2d30.320107651576738!3d59.93615306917235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f80c638c5%3A0x3d85851143d1f897!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4!5e0!3m2!1sru!2sua!4v1506270269785" width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-        <div class="contacts__wrapper">
+          <div class="contacts__map">
+            <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7582790791953!2d30.320107651576738!3d59.93615306917235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f80c638c5%3A0x3d85851143d1f897!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4!5e0!3m2!1sru!2sua!4v1506270269785" width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
           <a class="contacts__btn btn" href="#feedback" >Напишите нам</a>
         </div>
       </section>
@@ -177,6 +175,28 @@
         <button class="modal-tocart__btn btn" type="submit">Добавить</button>
       </form>
     </div>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+      navToggle.classList.remove('main-nav__toggle--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navToggle.classList.remove('main-nav__toggle--closed');
+          navMain.classList.add('main-nav--opened');
+          navToggle.classList.add('main-nav__toggle--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navToggle.classList.add('main-nav__toggle--closed');
+          navMain.classList.remove('main-nav--opened');
+          navToggle.classList.remove('main-nav__toggle--opened');
+        }
+      });
+    </script>
 
   </body>
 </html>

@@ -1,5 +1,5 @@
 .category {
-  margin-top: -200px;
+  margin-top: -210px;
   margin-bottom: 25px;
 }
 
@@ -8,16 +8,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 26px 30px;
+  padding: 28px 30px;
   text-decoration: none;
   color: $white;
 
   &--left {
     background-color: $primary-color;
+
+    &:hover {
+      background-color: darken($primary-color, 2%);
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
   }
 
   &--right {
     background-color: lighten($secondary-color, 4%);
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
   }
 }
 
@@ -30,11 +46,23 @@
     @include container;
     display: flex;
     justify-content: space-between;
-    margin-top: -108px;
+    margin-top: -110px;
   }
 
   .category__item {
-    padding: 30px;
+    padding: 35px;
     flex-basis: 50%;
+  }
+}
+
+@media #{$desktop-width} {
+  .category {
+    margin-bottom: 83px;
+  }
+
+  .category__item {
+    @include font-set(20px, 30px, bold);
+    padding-top: 30px;
+    padding-bottom: 27px;
   }
 }

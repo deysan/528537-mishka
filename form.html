@@ -10,7 +10,7 @@
 
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button">Открыть меню</button>
+        <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--logo">
             <a class="main-nav__link main-nav__link--logo" href="index.html">
@@ -21,7 +21,7 @@
             <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item main-nav__item--form">
-            <a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a>
+            <a class="main-nav__link main-nav__link--form">Вязание на заказ</a>
           </li>
           <li class="main-nav__item main-nav__item--search">
             <a class="main-nav__link main-nav__link--search" href="#search">Поиск по сайту</a>
@@ -138,6 +138,28 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+      navToggle.classList.remove('main-nav__toggle--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navToggle.classList.remove('main-nav__toggle--closed');
+          navMain.classList.add('main-nav--opened');
+          navToggle.classList.add('main-nav__toggle--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navToggle.classList.add('main-nav__toggle--closed');
+          navMain.classList.remove('main-nav--opened');
+          navToggle.classList.remove('main-nav__toggle--opened');
+        }
+      });
+    </script>
 
   </body>
 </html>
