@@ -1,3 +1,7 @@
+.contacts {
+  margin-bottom: 40px;
+}
+
 .contacts__title {
   @include font-set(18px, 30px, bold);
   max-width: 520px;
@@ -80,7 +84,7 @@
 
   .contacts__btn {
     width: 30%;
-    margin-top: 47px;
+    margin-top: 48px;
     margin-bottom: 55px;
   }
 }

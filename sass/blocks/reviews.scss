@@ -14,11 +14,13 @@
 
 .reviews__text {
   @include font(15px, 30px);
-  margin: 25px 0;
+  margin-top: 25px;
+  margin-bottom: 22px;
   color: $dark;
 }
 
 .reviews__author-name {
+  @include font-set(17px, 24px, bold);
   display: block;
   padding: 5px 0;
   font-style: normal;
@@ -26,16 +28,20 @@
 }
 
 .reviews__author-link {
-  font-size: 17px;
+  @include font(17px, 24px);
   font-style: normal;
   text-decoration: none;
   color: $dark;
 }
 
 .reviews__controls {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 34px;
+  margin-bottom: 8px;
   text-align: center;
+}
+
+.reviews__link {
+  cursor: pointer;
 }
 
 .reviews__btn {
@@ -53,10 +59,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 50px;
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 350px auto;
     background-position: left 10px;
+
+    @media #{$retina} {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__title {

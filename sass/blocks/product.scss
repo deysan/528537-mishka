@@ -1,5 +1,5 @@
 .product {
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 }
 
 .product__wrapper {
@@ -52,12 +52,11 @@
 
 .product__image {
   padding-top: 30px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   text-align: center;
 
   & img {
     width: 100%;
-    height: auto;
   }
 }
 
@@ -71,7 +70,7 @@
 }
 
 .product__btn {
-  margin: 25px 0;
+  margin: 24px 0;
 }
 
 @media #{$tablet-width} {
@@ -164,7 +163,6 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-end;
-    // margin-top: 100px;
   }
 
   .product__title {
