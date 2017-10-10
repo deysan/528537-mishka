@@ -1,4 +1,5 @@
 .page-footer {
+  flex-shrink: 1;
   background-color: $color-bg;
 }
 
@@ -18,23 +19,38 @@
 
 .page-footer__copyright {
   border-top: 1px solid darken($color-bg, 4%);
-  // box-sizing: border-box;
 }
 
 @media #{$tablet-width} {
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
     min-height: 140px;
     padding: 0 50px;
   }
 
   .page-footer__logo {
     @include center;
+    justify-content: flex-start;
+    width: 33%;
+
+    &-link:hover,
+    &-link:focus {
+      fill: $primary-color;
+    }
+
+    &-link:active {
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__social {
+    width: 33%;
   }
 
   .page-footer__copyright {
+    justify-content: flex-end;
+    width: 33%;
     border: none;
   }
 }

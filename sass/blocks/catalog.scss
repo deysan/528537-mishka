@@ -5,7 +5,7 @@
 }
 
 .catalog__item {
-  margin-top: 30px;
+  box-sizing: border-box;
   border: 1px solid darken($color-bg, 2%);
 
   &:hover {
@@ -70,6 +70,10 @@
 }
 
 @media #{$tablet-width} {
+  .catalog {
+    margin-top: 60px;
+  }
+
   .catalog__item {
     display: flex;
     min-height: 334px;
@@ -112,14 +116,17 @@
 @media #{$desktop-width} {
   .catalog {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 5px;
   }
 
   .catalog__item {
     flex-direction: column;
-    width: 315px;
+    width: 30%;
+
+    &:not(:nth-of-type(3n)) {
+      margin-right: 5%;
+    }
   }
 
   .catalog__image {

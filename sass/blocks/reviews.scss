@@ -75,11 +75,6 @@
     order: -2;
   }
 
-  .reviews__item {
-    display: flex;
-    flex-direction: column;
-  }
-
   .reviews__text {
     @include font(17px, 30px);
     margin-bottom: 53px;
