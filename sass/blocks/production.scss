@@ -34,18 +34,18 @@
 
 .production__player {
   @include center;
+  position: relative;
   margin-bottom: 25px;
   text-align: center;
 }
 
-.production__video {
-  position: relative;
-}
-
 .production__player-btn {
   position: absolute;
-  top: calc(50%-101px);
-  left: calc(50%-77px);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 101px;
   height: 77px;
   font-size: 0;

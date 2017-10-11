@@ -44,9 +44,9 @@
   font-size: 0;
   border: 1px solid $color-bg;
 
-  &:after {
-    position: absolute;
+  &::after {
     content: "";
+    position: absolute;
     top: 0;
     left: 50%;
     height: 100%;
@@ -155,7 +155,7 @@
     right: 40px;
     border: none;
 
-    &:after {
+    &::after {
       display: none;
     }
   }

@@ -8,12 +8,12 @@
   font-size: 0;
   fill: $primary-color;
 
-    &:hover,
-    &:focus {
-      fill: $secondary-color;
-    }
+  &:hover,
+  &:focus {
+    fill: $secondary-color;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
+  }
 }
