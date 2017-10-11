@@ -1,6 +1,6 @@
 .production {
   @include container;
-  margin: 30px auto;
+  margin-bottom: 60px;
 }
 
 .production__wrapper {
@@ -21,7 +21,15 @@
 
 .production__title {
   @include font-set(17px, 24px, bold);
+  position: relative;
   padding-left: 60px;
+
+  & svg {
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    fill: $primary-color;
+  }
 }
 
 .production__player {
@@ -31,12 +39,29 @@
 }
 
 .production__video {
-  // width: 100%;
-  // height: auto;
+  position: relative;
 }
 
 .production__player-btn {
   position: absolute;
+  top: calc(50%-101px);
+  left: calc(50%-77px);
+  width: 101px;
+  height: 77px;
+  font-size: 0;
+  border: none;
+  outline: none;
+  background: transparent url("../img/icon-play.svg") no-repeat 50% 50%;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .production__desc {
@@ -67,6 +92,11 @@
   .production__title {
     @include font-set(20px, 24px, bold);
     padding-left: 65px;
+
+    & svg {
+      top: -5px;
+      left: 0;
+    }
   }
 
   .production__player {
@@ -99,10 +129,10 @@
   }
 
   .production__wrapper {
-    min-height: 455px;
-    width: 35%;
-    padding-left: 65%;
     position: relative;
+    width: 35%;
+    min-height: 455px;
+    padding-left: 65%;
   }
 
   .production__header {
@@ -113,8 +143,13 @@
   }
 
   .production__title {
-    padding-top: 30px;
+    padding-top: 32px;
     width: 200px;
+
+    & svg {
+      top: -20px;
+      left: 68px;
+    }
   }
 
   .production__player {

@@ -16,7 +16,14 @@
 .about__item {
   @include font-set(17px, 20px, bold);
   margin-top: 29px;
-  padding-top: 55px;
+}
+
+.about__icon {
+  display: block;
+  width: 50px;
+  height: 35px;
+  margin-bottom: 20px;
+  fill: $primary-color;
 }
 
 @media #{$tablet-width} {

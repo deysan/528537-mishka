@@ -35,13 +35,78 @@
 }
 
 .reviews__controls {
+  position: relative;
+  display: flex;
+  height: 50px;
+  min-width: 240px;
   margin-top: 34px;
   margin-bottom: 8px;
-  text-align: center;
+  font-size: 0;
+  border: 1px solid $color-bg;
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 1px;
+    background-color: $color-bg;
+  }
 }
 
 .reviews__link {
+  position: relative;
+  width: 50%;
+  background: none;
+  border: none;
+  outline: none;
   cursor: pointer;
+
+  &--prev,
+  &--next {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 23px;
+      left: 30.63%;
+      display: block;
+      width: 38.77%;
+      height: 4px;
+      background-color: $black;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 30.63%;
+      display: block;
+      width: 16px;
+      height: 16px;
+      border: 4px solid $black;
+      border-top-style: none;
+      border-right-style: none;
+      transform: rotate(45deg);
+    }
+  }
+
+  &--next {
+    &::after {
+      left: auto;
+      right: 30.63%;
+      transform: rotate(225deg);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__btn {
@@ -50,7 +115,7 @@
 
 @media #{$tablet-width} {
   .reviews {
-    margin-bottom: 145px;
+    margin-bottom: 130px;
   }
 
   .reviews__wrapper {
@@ -86,8 +151,13 @@
 
   .reviews__controls {
     position: absolute;
-    bottom: 52px;
-    right: 50px;
+    bottom: 45px;
+    right: 40px;
+    border: none;
+
+    &:after {
+      display: none;
+    }
   }
 
   .reviews__btn {
@@ -127,8 +197,8 @@
   }
 
   .reviews__controls {
-    bottom: 104px;
-    right: 0;
+    bottom: 90px;
+    right: -15px;
   }
 
   .reviews__btn {
