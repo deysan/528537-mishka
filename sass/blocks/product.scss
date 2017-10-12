@@ -1,7 +1,3 @@
-.product {
-  margin-bottom: 44px;
-}
-
 .product__wrapper {
   @include container;
 }
@@ -75,7 +71,7 @@
 
 @media #{$tablet-width} {
   .product {
-    margin-bottom: 120px;
+    margin-bottom: 50px;
   }
 
   .product__wrapper {
@@ -138,8 +134,8 @@
   }
 
   .product__footer {
-    margin-top: 36px;
     width: 50%;
+    margin-top: 36px;
     padding-right: 45px;
     box-sizing: border-box;
   }
@@ -156,7 +152,7 @@
 
 @media #{$desktop-width} {
   .product {
-    margin-bottom: 155px;
+    margin-bottom: 70px;
   }
 
   .product__header {

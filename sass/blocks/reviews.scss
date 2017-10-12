@@ -1,6 +1,5 @@
 .reviews__wrapper {
   @include container;
-  margin-bottom: 55px;
 }
 
 .reviews__title {
@@ -115,7 +114,7 @@
 
 @media #{$tablet-width} {
   .reviews {
-    margin-bottom: 130px;
+    margin-bottom: 65px;
   }
 
   .reviews__wrapper {
@@ -171,7 +170,7 @@
 
 @media #{$desktop-width} {
   .reviews {
-    margin-bottom: 160px;
+    margin-bottom: 65px;
   }
 
   .reviews__wrapper {

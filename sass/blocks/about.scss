@@ -29,6 +29,7 @@
 @media #{$tablet-width} {
   .about {
     @include container;
+    margin-top: 45px;
     margin-bottom: 75px;
   }
 
@@ -83,6 +84,7 @@
 
 @media #{$desktop-width} {
   .about {
+    margin-top: 63px;
     margin-bottom: 65px;
   }
 
