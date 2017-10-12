@@ -18,25 +18,32 @@
   &--closed::before {
     content: "";
     position: absolute;
-    top: 30px;
+    top: 33px;
     right: 30px;
-    width: 20px;
-    height: 20px;
-    background-image: url("../img/icon-menu-open.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 21px;
+    height: 2px;
+    background-color: $black;
+    box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
   }
 
+  &--opened::before,
   &--opened::after {
     content: "";
     position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 21px;
-    height: 21px;
-    background-image: url("../img/icon-menu-close.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    top: 39px;
+    right: 28px;
+    width: 25px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &--opened::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &--opened::after {
+    transform: rotate(-45deg);
   }
 
   &--nojs {
@@ -81,6 +88,7 @@
   padding-bottom: 28px;
   padding-left: 76px;
   text-decoration: none;
+  outline: none;
   color: $black;
 
   &--logo {

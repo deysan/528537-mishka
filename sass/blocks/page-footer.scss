@@ -34,6 +34,10 @@
     justify-content: flex-start;
     width: 33%;
 
+    &-link {
+      outline: none;
+    }
+
     &-link:hover,
     &-link:focus {
       fill: $primary-color;

@@ -9,7 +9,8 @@
   box-sizing: border-box;
   border: 1px solid darken($color-bg, 2%);
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 6px 10px rgba($black, 0.1);
   }
 
@@ -73,6 +74,7 @@
 
 .catalog__buy {
   font-size: 0;
+  outline: none;
   opacity: 0.2;
 
   &:hover,

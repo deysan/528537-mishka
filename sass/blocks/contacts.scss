@@ -58,22 +58,37 @@
 @media #{$tablet-width} {
   .contacts__title {
     @include font-set(43px, 50px, bold);
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 768px;
     margin: 0 auto;
-    margin-top: 43px;
-    margin-bottom: 33px;
+    margin-top: 60px;
+    margin-bottom: 48px;
     padding: 0 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -16px;
+      right: 96px;
+      display: block;
+      width: 4px;
+      height: 81px;
+      background-color: $black;
+    }
 
     &::after {
       content: "";
+      position: absolute;
+      top: -13px;
+      right: 52px;
       display: block;
-      width: 47px;
-      height: 82px;
-      background-image: url("../img/icon-flag.svg");
-      background-repeat: no-repeat;
+      border-left: 40px solid $primary-color;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-right: none;
     }
   }
 
@@ -123,16 +138,18 @@
 
   .contacts__title {
     @include font-set(53px, 57px, bold);
-    position: relative;
     margin-top: 70px;
     margin-bottom: 50px;
     padding-right: 100px;
 
+    &::before {
+      top: -7px;
+      left: -57px;
+    }
+
     &::after {
-      position: absolute;
-      top: -10px;
-      left: -55px;
-      order: -1;
+      top: -4px;
+      left: -49px;
     }
   }
 
