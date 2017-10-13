@@ -68,15 +68,11 @@
 .main-nav__item {
   // display: none;
   margin: 0;
-  border-top: 1px solid rgba($dark, 0.1);
+  border-bottom: 1px solid rgba($dark, 0.1);
 
   &--arrivals,
   &--sale {
     display: none;
-  }
-
-  &--cart {
-    border-bottom: 1px solid rgba($dark, 0.1);
   }
 }
 

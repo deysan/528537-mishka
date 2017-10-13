@@ -5,7 +5,6 @@
 .page-header__intro {
   min-height: 174px;
   background-color: #fafafa;
-  border-top: 1px solid rgba($dark, 0.1);
 
   &--index {
     display: block;
@@ -42,6 +41,7 @@
   .page-header__intro {
     min-height: 222px;
     margin-bottom: 51px;
+    border-top: 1px solid rgba($dark, 0.1);
 
     &--index {
       min-height: 743px;
