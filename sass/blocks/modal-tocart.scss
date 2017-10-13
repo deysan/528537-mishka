@@ -3,8 +3,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba($white, 0.9);
   z-index: 10;
 }
@@ -12,8 +12,11 @@
 .modal-tocart {
   display: none;
   position: fixed;
-  top: 30%;
-  left: 40%;
+  top: 25vh;
+  left: 0;
+  right: 0;
+  max-width: 560px;
+  margin: auto;
   z-index: 100;
   background-color: $white;
   border: 1px solid darken($color-bg, 15%);
@@ -21,6 +24,9 @@
 }
 
 .modal-tocart__form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 30px;
   text-align: center;
   color: $black;
@@ -28,50 +34,78 @@
 
 .modal-tocart__title {
   @include font-set(25px, 30px, bold);
+  width: 100%;
   margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 .modal-tocart__text {
   @include font(15px, 30px);
+  width: 100%;
   margin: 0;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
+  color: $dark;
 }
 
 .modal-tocart__label {
   @include font-set(17px, 16px, bold);
-  padding: 15px 30px;
-  border: 2px solid $color-bg;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding: 15px 0;
+  margin-bottom: 30px;
+  border: 2px solid rgba($dark, 0.1);
+  box-sizing: border-box;
+  cursor: pointer;
 
-  &:hover {
-    border-color: $primary-color;
+  &:not(:nth-of-type(3n)) {
+    margin-right: 5%;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: rgba($dark, 0.3);
   }
 
   &:active {
-    border-color: rgba($dark, 0.3);
+    border-color: $primary-color;
   }
 }
 
 .modal-tocart__input {
   display: none;
+  outline: none;
+
+  &:checked + .modal-tocart__label {
+    border-color: $primary-color;
+  }
 }
 
 .modal-tocart__btn {
-  margin-top: 30px;
+  width: 100%;
+  margin-bottom: 15px;
   color: $white;
   background-color: $primary-color;
   border: none;
 }
 
 @media #{$tablet-width} {
+  .modal-tocart {
+    left: 50%;
+    margin-left: -280px;
+  }
+
+  .modal-tocart__form {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
   .modal-tocart__title {
     @include font-set(30px, 57px, bold);
   }
-}
 
-@media #{$desktop-width} {
-  .modal-tocart__title {
-    @include font-set(30px, 57px, bold);
+  .modal-tocart__text {
+    @include font(17px, 30px);
   }
 }

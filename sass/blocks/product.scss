@@ -35,7 +35,7 @@
 
 .product__info-row {
   box-sizing: border-box;
-  border-bottom: 1px solid darken($color-bg, 2%);
+  border-bottom: 1px solid rgba($dark, 0.1);
 
   td {
     padding: 9px 0;

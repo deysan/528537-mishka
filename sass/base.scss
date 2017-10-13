@@ -37,11 +37,11 @@ img {
 
 .zigzag {
   @include container;
-}
 
-.zigzag__line {
-  display: block;
-  width: 100%;
-  fill: $color-bg;
-  z-index: 1;
+  & svg {
+    display: block;
+    width: 100%;
+    fill: $color-bg;
+    z-index: 1;
+  }
 }
