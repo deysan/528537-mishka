@@ -13,6 +13,10 @@
   @include container;
 }
 
+.order-form__group {
+  position: relative;
+}
+
 .order-form__wrapper,
 .order-form__group {
   margin-bottom: 15px;
@@ -92,7 +96,6 @@
 }
 
 .order-form__input-check:checked + ::after {
-  // background: url("../img/icon-tick.svg") no-repeat center;
   content: "";
   position: absolute;
   top: 5px;
@@ -133,14 +136,26 @@
   }
 
   &[type="tel"] {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   &:hover,
   &:focus,
-  &:active {
+  &:active,
+  &:hover + svg,
+  &:focus + svg,
+  &:active + svg {
     border-color: $primary-color;
+    fill: $primary-color;
+    opacity: 1;
   }
+}
+
+.order-form__icon {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  opacity: 0.2;
 }
 
 .order-form__textarea {
@@ -287,8 +302,14 @@
   input[type="tel"],
   input[type="email"] {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
     background-color: $color-bg;
+  }
+
+  .order-form__icon {
+    top: 10px;
+    right: 20px;
+    bottom: auto;
   }
 
   .order-form__textarea {
@@ -357,6 +378,12 @@
   input[type="tel"],
   input[type="email"] {
     width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .order-form__icon {
+    top: 15px;
+    right: 130px;
   }
 
   .order-form__textarea {

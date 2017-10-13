@@ -28,10 +28,10 @@
             <a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__item main-nav__item--search">
-            <a class="main-nav__link main-nav__link--search" href="#search">Поиск по сайту</a>
+            <a class="main-nav__link main-nav__link--search" href="#search"><svg width="18" height="19"><use xlink:href="img/sprite.svg#icon-search"></use></svg>Поиск по сайту</a>
           </li>
           <li class="main-nav__item main-nav__item--cart">
-            <a class="main-nav__link main-nav__link--cart" href="#cart">Корзина: пока пуста</a>
+            <a class="main-nav__link main-nav__link--cart" href="#cart"><svg width="21" height="18"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>Корзина: пока пуста</a>
           </li>
           <li class="main-nav__item main-nav__item--arrivals">
             <a class="main-nav__link main-nav__link--arrivals" href="#arrivals">Новые поступления</a>
@@ -52,10 +52,13 @@
       <div class="category">
         <a class="category__item category__item--left" href="catalog.html">
           <span class="category__title">Предметы интерьера</span>
+          <svg class="category__icon" width="40" height="62"><use xlink:href="img/sprite.svg#icon-category-interior"></use></svg>
         </a>
         <a class="category__item category__item--right" href="catalog.html">
           <span class="category__title">Детские игрушки</span>
+          <svg class="category__icon" width="60" height="60"><use xlink:href="img/sprite.svg#icon-category-toy"></use></svg>
         </a>
+        <svg class="category__zigzag" width="1150" height="34"><use xlink:href="img/sprite.svg#bg-zigzag-fill"></use></svg>
       </div>
 
       <article class="product">
@@ -95,15 +98,37 @@
         </div>
       </article>
 
+      <div class="zigzag">
+        <svg class="zigzag__line" width="1150" height="23"><use xlink:href="img/sprite.svg#bg-zigzag-line"></use></svg>
+      </div>
+
       <section class="about">
         <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__list">
-          <li class="about__item about__item--flower">Экологически чистые&nbsp;материалы</li>
-          <li class="about__item about__item--money">Скандинавский стиль по&nbsp;российской&nbsp;цене</li>
-          <li class="about__item about__item--heart">Увеличивает лайки на&nbsp;фотографиях</li>
-          <li class="about__item about__item--ball">Связано вручную с любовью&nbsp;и&nbsp;умилением</li>
-          <li class="about__item about__item--rocket">Поддержка&nbsp;отечественного производителя</li>
-          <li class="about__item about__item--gift">Поставляется в подарочной&nbsp;упаковке</li>
+          <li class="about__item">
+            <svg class="about__icon" width="32" height="37"><use xlink:href="img/sprite.svg#icon-feature-flower"></use></svg>
+            Экологически чистые&nbsp;материалы
+          </li>
+          <li class="about__item">
+            <svg class="about__icon" width="47" height="27"><use xlink:href="img/sprite.svg#icon-feature-money"></use></svg>
+            Скандинавский стиль по&nbsp;российской&nbsp;цене
+          </li>
+          <li class="about__item">
+            <svg class="about__icon" width="33" height="28"><use xlink:href="img/sprite.svg#icon-feature-heart"></use></svg>
+            Увеличивает лайки на&nbsp;фотографиях
+          </li>
+          <li class="about__item">
+            <svg class="about__icon" width="34" height="34"><use xlink:href="img/sprite.svg#icon-feature-ball"></use></svg>
+            Связано вручную с любовью&nbsp;и&nbsp;умилением
+          </li>
+          <li class="about__item">
+            <svg class="about__icon" width="54" height="23"><use xlink:href="img/sprite.svg#icon-feature-rocket"></use></svg>
+            Поддержка&nbsp;отечественного производителя
+          </li>
+          <li class="about__item">
+            <svg class="about__icon" width="33" height="32"><use xlink:href="img/sprite.svg#icon-feature-gift"></use></svg>
+            Поставляется в подарочной&nbsp;упаковке
+          </li>
         </ul>
       </section>
 
@@ -127,6 +152,10 @@
         </div>
       </section>
 
+      <div class="zigzag">
+        <svg class="zigzag__line" width="1150" height="23"><use xlink:href="img/sprite.svg#bg-zigzag-line"></use></svg>
+      </div>
+
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
@@ -143,7 +172,7 @@
           <div class="contacts__map">
             <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7582790791953!2d30.320107651576738!3d59.93615306917235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f80c638c5%3A0x3d85851143d1f897!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4!5e0!3m2!1sru!2sua!4v1506270269785" width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
-          <a class="contacts__btn btn" href="#feedback" >Напишите нам</a>
+          <a class="contacts__btn btn" href="#feedback">Напишите нам</a>
         </div>
       </section>
 
@@ -153,23 +182,30 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="index.html">
-            <img src="img/logo-footer.svg" width="102" height="34" alt="Интернет-магазин «Мишка» — Милые штучки ручной работы для дома">
+            <svg width="102" height="34"><use xlink:href="img/sprite.svg#logo-footer"></use></svg>
           </a>
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
-            <li class="social__item"><a class="social__link social__link--in" href="#in">Мы в Инстаграме</a></li>
-            <li class="social__item"><a class="social__link social__link--fb" href="#fb">Мы в Фейсбуке</a></li>
-            <li class="social__item"><a class="social__link social__link--tw" href="#tw">Мы в Твиттере</a></li>
+            <li class="social__item">
+              <a class="social__link social__link--in" href="#in">Мы в Инстаграме<svg width="22" height="21"><use xlink:href="img/sprite.svg#icon-social-insta"></use></svg></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#fb">Мы в Фейсбуке<svg width="15" height="29"><use xlink:href="img/sprite.svg#icon-social-fb"></use></svg></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tw" href="#tw">Мы в Твиттере<svg width="24" height="20"><use xlink:href="img/sprite.svg#icon-social-twitter"></use></svg></a>
+            </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/profile/id528537">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/profile/id528537">HTML Academy<svg width="27" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg></a>
         </div>
       </div>
     </footer>
 
+    <div class="modal-overlay"></div>
     <div class="modal-tocart">
       <form class="modal-tocart__form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="modal-tocart__title">Добавить в корзину</h2>
@@ -207,6 +243,8 @@
     </script>
 
     <script src="js/picturefill.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <!--[if !IE]>--><script>svg4everybody();</script><!--<![endif]-->
 
   </body>
 </html>

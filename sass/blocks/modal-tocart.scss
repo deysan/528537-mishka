@@ -1,3 +1,77 @@
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($white, 0.9);
+  z-index: 10;
+}
+
 .modal-tocart {
   display: none;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  z-index: 100;
+  background-color: $white;
+  border: 1px solid darken($color-bg, 15%);
+  box-shadow: 0 5px 10px 0 rgba($black, 0.25);
+}
+
+.modal-tocart__form {
+  padding: 30px;
+  text-align: center;
+  color: $black;
+}
+
+.modal-tocart__title {
+  @include font-set(25px, 30px, bold);
+  margin: 0;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.modal-tocart__text {
+  @include font(15px, 30px);
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.modal-tocart__label {
+  @include font-set(17px, 16px, bold);
+  padding: 15px 30px;
+  border: 2px solid $color-bg;
+
+  &:hover {
+    border-color: $primary-color;
+  }
+
+  &:active {
+    border-color: rgba($dark, 0.3);
+  }
+}
+
+.modal-tocart__input {
+  display: none;
+}
+
+.modal-tocart__btn {
+  margin-top: 30px;
+  color: $white;
+  background-color: $primary-color;
+  border: none;
+}
+
+@media #{$tablet-width} {
+  .modal-tocart__title {
+    @include font-set(30px, 57px, bold);
+  }
+}
+
+@media #{$desktop-width} {
+  .modal-tocart__title {
+    @include font-set(30px, 57px, bold);
+  }
 }
