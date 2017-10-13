@@ -71,7 +71,7 @@
             </div>
             <div class="catalog__order">
               <span class="catalog__price">1 200 руб.</span>
-              <a class="catalog__buy" href="#tocart">Купить<svg width="21" height="18"><use xlink:href="img/sprite.svg#icon-cart"></use></svg></a>
+              <a class="catalog__buy tocart" href="#tocart">Купить<svg width="21" height="18"><use xlink:href="img/sprite.svg#icon-cart"></use></svg></a>
             </div>
           </div>
         </article>
@@ -96,7 +96,7 @@
             </div>
             <div class="catalog__order">
               <span class="catalog__price">690 руб.</span>
-              <a class="catalog__buy" href="#tocart">Купить<svg width="21" height="18"><use xlink:href="img/sprite.svg#icon-cart"></use></svg></a>
+              <a class="catalog__buy tocart" href="#tocart">Купить<svg width="21" height="18"><use xlink:href="img/sprite.svg#icon-cart"></use></svg></a>
             </div>
           </div>
         </article>
@@ -121,7 +121,7 @@
             </div>
             <div class="catalog__order">
               <span class="catalog__price">1 500 руб.</span>
-              <a class="catalog__buy" href="#tocart">Купить<svg width="21" height="18"><use xlink:href="img/sprite.svg#icon-cart"></use></svg></a>
+              <a class="catalog__buy tocart" href="#tocart">Купить<svg width="21" height="18"><use xlink:href="img/sprite.svg#icon-cart"></use></svg></a>
             </div>
           </div>
         </article>
@@ -180,16 +180,17 @@
       </div>
     </footer>
 
-    <div class="modal-tocart">
+    <div class="modal-overlay"></div>
+    <div class="modal-tocart modal-tocart--closed">
       <form class="modal-tocart__form" action="https://echo.htmlacademy.ru" method="post">
-        <h2 class="modal-tocart__title">Добавить в корзину</h2>
+        <h2 class="modal-tocart__title">Добавить в&nbsp;корзину</h2>
         <p class="modal-tocart__text">Выберите размер:</p>
-        <input class="modal-tocart__input-radio" type="radio" name="size" value="s" id="size-s" checked>
-        <label class="modal-tocart__label-radio" for="size-s">S</label>
-        <input class="modal-tocart__input-radio" type="radio" name="size" value="m" id="size-m">
-        <label class="modal-tocart__label-radio" for="size-m">M</label>
-        <input class="modal-tocart__input-radio" type="radio" name="size" value="l" id="size-l">
-        <label class="modal-tocart__label-radio" for="size-l">L</label>
+        <input class="modal-tocart__input" type="radio" name="size" value="s" id="size-s" checked>
+        <label class="modal-tocart__label" for="size-s">S</label>
+        <input class="modal-tocart__input" type="radio" name="size" value="m" id="size-m">
+        <label class="modal-tocart__label" for="size-m">M</label>
+        <input class="modal-tocart__input" type="radio" name="size" value="l" id="size-l">
+        <label class="modal-tocart__label" for="size-l">L</label>
         <button class="modal-tocart__btn btn" type="submit">Добавить</button>
       </form>
     </div>

@@ -1,16 +1,4 @@
-.modal-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba($white, 0.9);
-  z-index: 10;
-}
-
 .modal-tocart {
-  display: none;
   position: fixed;
   top: 25vh;
   left: 0;
@@ -21,6 +9,14 @@
   background-color: $white;
   border: 1px solid darken($color-bg, 15%);
   box-shadow: 0 5px 10px 0 rgba($black, 0.25);
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
 }
 
 .modal-tocart__form {
