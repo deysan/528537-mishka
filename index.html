@@ -86,20 +86,24 @@
           </div>
           <div class="product__image">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/triple-set-desktop@1x.webp 1x, img/webp/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/triple-set-tablet@1x.webp 1x, img/webp/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/triple-set-mobile@1x.webp 1x, img/webp/triple-set-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
               <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
             </picture>
           </div>
           <footer class="product__footer">
             <span class="product__price">Цена: 990 руб.</span>
-            <a class="product__btn btn" href="#tocart">Заказать</a>
+            <a class="product__btn btn tocart" href="#tocart">Заказать</a>
           </footer>
         </div>
       </article>
 
       <div class="zigzag">
-        <svg class="zigzag__line" width="1150" height="23"><use xlink:href="img/sprite.svg#bg-zigzag-line"></use></svg>
+        <svg width="1150" height="23"><use xlink:href="img/sprite.svg#bg-zigzag-line"></use></svg>
       </div>
 
       <section class="about">
@@ -148,12 +152,12 @@
               <button class="reviews__link reviews__link--next" type="button">Следующий отзыв</button>
             </div>
           </div>
-          <a class="reviews__btn btn" href="#comment">Написать</a>
+          <a class="reviews__btn btn" href="#reviews">Написать</a>
         </div>
       </section>
 
       <div class="zigzag">
-        <svg class="zigzag__line" width="1150" height="23"><use xlink:href="img/sprite.svg#bg-zigzag-line"></use></svg>
+        <svg width="1150" height="23"><use xlink:href="img/sprite.svg#bg-zigzag-line"></use></svg>
       </div>
 
       <section class="contacts">
@@ -169,10 +173,10 @@
               <p class="contacts__text">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</p>
             </div>
           </div>
-          <div class="contacts__map">
-            <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7582790791953!2d30.320107651576738!3d59.93615306917235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f80c638c5%3A0x3d85851143d1f897!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4!5e0!3m2!1sru!2sua!4v1506270269785" width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <div id="map" class="contacts__map">
+            <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7582790791953!2d30.320107651576738!3d59.93615306917235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f80c638c5%3A0x3d85851143d1f897!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4!5e0!3m2!1sru!2sua!4v1506270269785" width="100%" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
-          <a class="contacts__btn btn" href="#feedback">Напишите нам</a>
+          <a class="contacts__btn btn" href="#contacts">Напишите нам</a>
         </div>
       </section>
 
@@ -200,15 +204,15 @@
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/profile/id528537">HTML Academy<svg width="27" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy<svg width="27" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg></a>
         </div>
       </div>
     </footer>
 
     <div class="modal-overlay"></div>
-    <div class="modal-tocart">
+    <div class="modal-tocart modal-tocart--closed">
       <form class="modal-tocart__form" action="https://echo.htmlacademy.ru" method="post">
-        <h2 class="modal-tocart__title">Добавить в корзину</h2>
+        <h2 class="modal-tocart__title">Добавить в&nbsp;корзину</h2>
         <p class="modal-tocart__text">Выберите размер:</p>
         <input class="modal-tocart__input" type="radio" name="size" value="s" id="size-s" checked>
         <label class="modal-tocart__label" for="size-s">S</label>
@@ -220,28 +224,7 @@
       </form>
     </div>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-      navToggle.classList.remove('main-nav__toggle--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navToggle.classList.remove('main-nav__toggle--closed');
-          navMain.classList.add('main-nav--opened');
-          navToggle.classList.add('main-nav__toggle--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navToggle.classList.add('main-nav__toggle--closed');
-          navMain.classList.remove('main-nav--opened');
-          navToggle.classList.remove('main-nav__toggle--opened');
-        }
-      });
-    </script>
-
+    <script src="js/main.js"></script>
     <script src="js/picturefill.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
     <!--[if !IE]>--><script>svg4everybody();</script><!--<![endif]-->

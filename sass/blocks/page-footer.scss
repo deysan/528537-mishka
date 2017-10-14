@@ -18,7 +18,7 @@
 }
 
 .page-footer__copyright {
-  border-top: 1px solid darken($color-bg, 4%);
+  border-top: 1px solid rgba($dark, 0.1);
 }
 
 @media #{$tablet-width} {

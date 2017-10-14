@@ -22,7 +22,6 @@
     &:hover,
     &:focus {
       background-color: darken($primary-color, 2%);
-      transform: translateY(-5px) scaleY(1.1);
     }
   }
 
@@ -32,7 +31,6 @@
     &:hover,
     &:focus {
       background-color: $secondary-color;
-      transform: translateY(-5px) scaleY(1.1);
     }
   }
 
@@ -73,6 +71,12 @@
     padding-top: 25px;
     padding-bottom: 31px;
     flex-basis: 50%;
+
+    &:hover,
+    &:focus {
+      margin-top: -5px;
+      padding-bottom: 36px;
+    }
   }
 
   .category__zigzag {
@@ -96,6 +100,12 @@
     @include font-set(20px, 30px, bold);
     padding-top: 30px;
     padding-bottom: 25px;
+
+    &:hover,
+    &:focus {
+      margin-top: -5px;
+      padding-bottom: 30px;
+    }
   }
 
   .category__zigzag {

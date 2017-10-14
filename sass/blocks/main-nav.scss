@@ -68,15 +68,11 @@
 .main-nav__item {
   // display: none;
   margin: 0;
-  border-top: 1px solid darken($color-bg, 2%);
+  border-bottom: 1px solid rgba($dark, 0.1);
 
   &--arrivals,
   &--sale {
     display: none;
-  }
-
-  &--cart {
-    border-bottom: 1px solid darken($color-bg, 2%);
   }
 }
 
@@ -187,12 +183,12 @@
 
     &--search {
       margin-left: auto;
-      border-left: 1px solid darken($color-bg, 2%);
+      border-left: 1px solid rgba($dark, 0.1);
       order: 2;
     }
 
     &--cart {
-      border-left: 1px solid darken($color-bg, 2%);
+      border-left: 1px solid rgba($dark, 0.1);
       order: 3;
     }
 
@@ -261,7 +257,7 @@
     }
 
     &--form {
-      border-left: 1px solid darken($color-bg, 2%);
+      border-left: 1px solid rgba($dark, 0.1);
       margin-right: 25px;
     }
 
