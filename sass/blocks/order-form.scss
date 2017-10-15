@@ -1,5 +1,5 @@
 .order-form {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .order-form__promo {
@@ -31,8 +31,8 @@
 .order-form__title {
   @include font-set(16px, 17px, bold);
   position: relative;
-  margin-top: 15px;
-  margin-bottom: 26px;
+  margin-top: 14px;
+  margin-bottom: 27px;
   color: $primary-color;
   text-transform: uppercase;
 
@@ -136,6 +136,10 @@
   }
 
   &[type="tel"] {
+    margin-bottom: 30px;
+  }
+
+  &[type="email"] {
     margin-bottom: 15px;
   }
 
@@ -297,6 +301,14 @@
     padding-left: 15px;
     padding-bottom: 15px;
     flex-grow: 1;
+
+    &[type="tel"] {
+      margin-bottom: 20px;
+    }
+
+    &[type="email"] {
+      margin-bottom: 15px;
+    }
   }
 
   input[type="tel"],
@@ -338,7 +350,7 @@
   .order-form__btn {
     width: 35%;
     margin: 0;
-    margin-top: 4px;
+    margin-top: 7px;
   }
 }
 
@@ -363,7 +375,7 @@
   }
 
   .order-form__label-check {
-    width: 33%;
+    width: 33.3%;
 
     &:nth-last-child(-n+5) {
       margin-bottom: 0;
@@ -397,6 +409,7 @@
 
   .order-form__btn {
     width: 33%;
-    margin-top: 6px;
+    margin: 0;
+    margin-bottom: -5px;
   }
 }

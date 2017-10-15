@@ -67,9 +67,10 @@
   }
 
   .category__item {
+    @include font-set(20px, 30px, bold);
     padding: 0 35px;
-    padding-top: 25px;
-    padding-bottom: 31px;
+    padding-top: 27px;
+    padding-bottom: 30px;
     flex-basis: 50%;
 
     &:hover,
@@ -77,16 +78,6 @@
       margin-top: -5px;
       padding-bottom: 36px;
     }
-  }
-
-  .category__zigzag {
-    position: absolute;
-    display: block;
-    bottom: -19px;
-    left: 0;
-    width: 100%;
-    fill: $white;
-    z-index: 1;
   }
 }
 
@@ -106,9 +97,5 @@
       margin-top: -5px;
       padding-bottom: 30px;
     }
-  }
-
-  .category__zigzag {
-    bottom: -20px;
   }
 }

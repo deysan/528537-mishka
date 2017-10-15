@@ -1,5 +1,6 @@
 .reviews__wrapper {
   @include container;
+  margin-bottom: 5px;
 }
 
 .reviews__title {
@@ -38,7 +39,7 @@
   display: flex;
   height: 50px;
   min-width: 240px;
-  margin-top: 34px;
+  margin-top: 33px;
   margin-bottom: 8px;
   font-size: 0;
   border: 1px solid $color-bg;
@@ -109,12 +110,12 @@
 }
 
 .reviews__btn {
-  margin: 30px 0;
+  margin: 28px 0;
 }
 
 @media #{$tablet-width} {
   .reviews {
-    margin-bottom: 65px;
+    margin-bottom: 64px;
   }
 
   .reviews__wrapper {
@@ -141,6 +142,7 @@
 
   .reviews__text {
     @include font(17px, 30px);
+    margin-top: 23px;
     margin-bottom: 53px;
   }
 
@@ -170,7 +172,7 @@
 
 @media #{$desktop-width} {
   .reviews {
-    margin-bottom: 65px;
+    margin-bottom: 68px;
   }
 
   .reviews__wrapper {
