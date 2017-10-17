@@ -209,7 +209,7 @@
     @include font(17px, 30px);
     max-width: 700px;
     padding: 0 50px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
 
   .order-form__fieldset:nth-child(2n+1) {
@@ -218,7 +218,7 @@
 
   .order-form__fieldset:nth-child(5) {
     & .order-form__wrapper {
-      padding-bottom: 33px;
+      padding-bottom: 30px;
     }
   }
 
@@ -238,7 +238,7 @@
     display: flex;
     justify-content: flex-start;
     width: 25%;
-    margin-top: 25px;
+    margin-top: 20px;
 
     &::after {
       display: none;
@@ -251,6 +251,10 @@
     align-items: baseline;
     margin: 0;
     width: 75%;
+  }
+
+  .order-form__fieldset:nth-child(3) > .order-form__wrapper {
+    padding-right: 35px;
   }
 
   .order-form__label {
@@ -357,6 +361,7 @@
 @media #{$desktop-width} {
   .order-form {
     margin-top: 55px;
+    margin-bottom: 54px;
   }
 
   .order-form__promo {
@@ -374,6 +379,24 @@
     padding-right: 50px;
   }
 
+  .order-form__fieldset:nth-child(5) {
+    & .order-form__wrapper {
+      padding-bottom: 32px;
+    }
+  }
+
+  .order-form__fieldset:nth-child(3) & .order-form__title {
+    padding-left: 35px;
+  }
+
+  .order-form__fieldset:nth-child(3) > .order-form__wrapper {
+    padding-right: 0;
+
+    & .order-form__group {
+      width: 75%;
+    }
+  }
+
   .order-form__label-check {
     width: 33.3%;
 
@@ -383,7 +406,7 @@
   }
 
   .order-form__input {
-    width: 65%;
+    width: 70%;
     margin-right: 10%;
   }
 

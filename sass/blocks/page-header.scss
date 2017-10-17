@@ -75,7 +75,7 @@
   .page-header__title {
     @include font-set(43px, 50px, bold);
     min-width: 668px;
-    padding-top: 55px;
+    padding-top: 52px;
   }
 
   .page-header__zigzag {
@@ -100,7 +100,7 @@
       background-size: 1250px 746px;
 
       .page-header__title {
-        padding-top: 115px;
+        padding-top: 112px;
       }
     }
   }
