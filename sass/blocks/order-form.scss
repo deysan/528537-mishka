@@ -307,18 +307,18 @@
     flex-grow: 1;
 
     &[type="tel"] {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     &[type="email"] {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
   }
 
   input[type="tel"],
   input[type="email"] {
     width: 100%;
-    margin-top: 15px;
+    margin-top: 10px;
     background-color: $color-bg;
   }
 
@@ -330,6 +330,7 @@
 
   .order-form__textarea {
     @include font(19px, 18px);
+    height: 145px;
     margin-top: 0;
   }
 
@@ -354,7 +355,6 @@
   .order-form__btn {
     width: 35%;
     margin: 0;
-    margin-top: 7px;
   }
 }
 
@@ -423,6 +423,7 @@
 
   .order-form__textarea {
     width: 90%;
+    height: 140px;
   }
 
   .order-form__footer-wrapper {
