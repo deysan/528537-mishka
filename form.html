@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Вязание на заказ | Интернет-магазин «Мишка» — Милые штучки ручной работы для дома</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>document.createElement("picture");</script>
+    <script src="js/picturefill.min.js" async></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
 
@@ -17,7 +20,7 @@
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка» — Милые штучки ручной работы для дома">
+                <img src="img/logo-mobile.svg" width="86" height="35" alt="«Мишка»">
               </picture>
             </a>
           </li>
@@ -44,6 +47,7 @@
       <div class="page-header__intro">
         <p class="page-header__delivery">Бесплатная доставка по России</p>
         <h1 class="page-header__title">Вязание на заказ</h1>
+        <svg class="page-header__zigzag" width="1150" height="34"><use xlink:href="img/sprite.svg#bg-zigzag-fill"></use></svg>
       </div>
     </header>
 
@@ -151,10 +155,8 @@
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
-    <script src="js/picturefill.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
-    <!--[if !IE]>--><script>svg4everybody();</script><!--<![endif]-->
+    <script>svg4everybody();</script>
 
   </body>
 </html>

@@ -1,11 +1,11 @@
 .about {
   @include container;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 .about__title {
   @include font-set(25px, 30px, bold);
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .about__list {
@@ -15,7 +15,7 @@
 
 .about__item {
   @include font-set(17px, 20px, bold);
-  margin-top: 29px;
+  margin-top: 28px;
 }
 
 .about__icon {
@@ -35,7 +35,7 @@
 
   .about__title {
     @include font-set(43px, 50px, bold);
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
 
   .about__list {
@@ -85,7 +85,7 @@
 @media #{$desktop-width} {
   .about {
     margin-top: 63px;
-    margin-bottom: 65px;
+    margin-bottom: 68px;
   }
 
   .about__title {
@@ -99,6 +99,6 @@
 
   .about__item {
     width: 40%;
-    margin-top: 58px;
+    margin-top: 55px;
   }
 }
