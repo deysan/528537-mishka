@@ -1,5 +1,5 @@
 .main-nav {
-  min-height: 80px;
+  height: 80px;
 }
 
 .main-nav__toggle {
@@ -91,6 +91,7 @@
     @include center;
     padding: 0;
     height: 79px;
+    line-height: 0;
 
     & img {
       width: 86px;
@@ -161,6 +162,10 @@
 }
 
 @media #{$tablet-width} {
+  .main-nav {
+    height: 88px;
+  }
+
   .main-nav__toggle {
     display: none;
   }
@@ -170,7 +175,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    height: 88px;
   }
 
   .main-nav__item {
@@ -194,7 +198,7 @@
 
     &--catalog,
     &--form {
-      margin-top: 16px;
+      margin-top: 18px;
       padding-right: 34px;
       order: 4;
     }
@@ -207,6 +211,7 @@
     &--logo {
       height: auto;
       justify-content: flex-start;
+      line-height: 0;
 
       & img {
         width: 112px;
@@ -216,17 +221,17 @@
 
     &--search {
       width: 83px;
-      padding: 33px 0;
+      height: 88px;
       font-size: 0;
 
       & svg {
         top: 36px;
-        left: 34px;
+        left: 33px;
       }
     }
 
     &--cart {
-      padding: 33px 0;
+      padding: 31px 0 33px;
       padding-left: 83px;
 
       & svg {
@@ -279,7 +284,7 @@
     &--arrivals,
     &--sale {
       display: block;
-      margin-top: 15px;
+      margin-top: 18px;
       padding-left: 50px;
       padding-right: 10px;
       order: 5;
@@ -294,26 +299,14 @@
       }
     }
 
-    &--search {
-      & svg {
-        top: 36px;
-        left: 31px;
-      }
-    }
-
     &--cart {
-      padding-right: 50px;
-
-      & svg {
-        top: 35px;
-        left: 29px;
-      }
+      padding-right: 52px;
     }
 
     &--catalog,
     &--form {
       @include font-set(17px, 24px, bold);
-      padding: 33px 35px;
+      padding: 31px 35px 33px;
     }
 
     &--catalog {
